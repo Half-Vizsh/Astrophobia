@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 581939405}
   - component: {fileID: 581939404}
   - component: {fileID: 581939403}
+  - component: {fileID: 581939406}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -211,6 +212,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581939406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581939402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &1127116218
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +267,8 @@ GameObject:
   - component: {fileID: 1127116221}
   - component: {fileID: 1127116220}
   - component: {fileID: 1127116219}
+  - component: {fileID: 1127116223}
+  - component: {fileID: 1127116222}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -318,6 +365,99 @@ Transform:
   - {fileID: 1931333996}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1127116222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127116218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d68255cf317cef945a8ddf88565c6c21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Health
+  maxHP: 100
+  invisibleDuration: 0
+--- !u!114 &1127116223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127116218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815f8554a2e71314f9befcc8ec90752a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Mov
+  MoveButton:
+    m_Name: Move Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d57d1317-f3a1-4391-8075-0181d004d267
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 074d2ab0-aa97-4d1d-ad7f-a49c38f9e541
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Button
+      m_Flags: 4
+    - m_Name: up
+      m_Id: ae4eb779-9ce3-423d-857c-80f32f08359e
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Button
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 865b0a43-eaf6-43b2-8a6e-4de5f6005a1b
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Button
+      m_Flags: 8
+    - m_Name: left
+      m_Id: c41fb490-31d6-46be-a345-db701d0b3265
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Button
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 61441048-f857-4c55-9909-32039b707b06
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Button
+      m_Flags: 8
+    m_Flags: 0
+  speed: 4
+  DodgeButton:
+    m_Name: Dodge Button
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 9336954b-b021-4022-9a40-659c60a2c056
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 88e6c72f-f310-49e0-9db5-ff7bc0e28894
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Dodge Button
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1 &1931333995
 GameObject:
   m_ObjectHideFlags: 0
