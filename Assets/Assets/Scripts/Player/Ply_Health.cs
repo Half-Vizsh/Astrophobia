@@ -18,7 +18,7 @@ public class Ply_Health : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        maxHP = currentHP;
+        currentHP = maxHP;
     }
 
     // Update is called once per frame

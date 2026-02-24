@@ -458,6 +458,9 @@ MonoBehaviour:
       m_Action: Dodge Button
       m_Flags: 0
     m_Flags: 0
+  ply_Health: {fileID: 0}
+  dodgeDur: 0.5
+  DodgeSpeed: 50
 --- !u!1 &1931333995
 GameObject:
   m_ObjectHideFlags: 0
