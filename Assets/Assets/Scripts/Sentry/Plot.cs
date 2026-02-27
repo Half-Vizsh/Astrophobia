@@ -1,0 +1,27 @@
+using UnityEngine;
+
+public class Plot : MonoBehaviour
+{
+    private SpriteRenderer sr;
+    private Color defaultColor;
+
+    void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        defaultColor = sr.color;
+    }
+    
+    public void Highlight(bool state)
+    {
+        sr.color = state ? Color.cyan : defaultColor;
+    }
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        
+    }
+}
