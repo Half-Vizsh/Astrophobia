@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Plot : MonoBehaviour
 {
+    [Header("Plot Coordinate")]
+    public int row;
+    public int col;
+
     private SpriteRenderer sr;
     private Color defaultColor;
 
@@ -10,18 +14,9 @@ public class Plot : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         defaultColor = sr.color;
     }
-    
+
     public void Highlight(bool state)
     {
         sr.color = state ? Color.cyan : defaultColor;
-    }
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
     }
 }
