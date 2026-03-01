@@ -13,7 +13,6 @@ public class Test_WindTurret : MonoBehaviour
         if (NextShot < Time.time)
         {
             GameObject bullet = Instantiate (BulletPrefab, BulletPoint.position, transform.rotation);
-            bullet.GetComponent<WindBullet>();
             NextShot +=shotCD;
         }
     }

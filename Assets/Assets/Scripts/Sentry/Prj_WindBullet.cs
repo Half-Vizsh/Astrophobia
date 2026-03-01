@@ -1,10 +1,11 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class WindBullet : MonoBehaviour
+public class Prj_WindBullet : MonoBehaviour
 {
     public Rigidbody2D rb2D;
     public float speed;
+    public float PushPower;
     public void FixedUpdate()
     {
         rb2D.AddForce(transform.up * speed);
@@ -14,6 +15,8 @@ public class WindBullet : MonoBehaviour
         if (other.tag == "Dummy")
         {
             other.GetComponent<Dummy_TakingDamage>().TakingDamage(1);
+            //other.GetComponent<Rigidbody2D>().AddForce(transform.up*PushPower);
+            // Apply CC here, probably need enemy
         }
         Destroy(gameObject);
     }
