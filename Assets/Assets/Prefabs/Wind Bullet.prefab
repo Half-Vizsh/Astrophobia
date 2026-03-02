@@ -170,5 +170,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindBullet
   rb2D: {fileID: 1813688708579838092}
-  speed: 5
+  speed: 10
   PushPower: 0

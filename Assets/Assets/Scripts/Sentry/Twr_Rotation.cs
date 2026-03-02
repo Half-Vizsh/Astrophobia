@@ -18,6 +18,8 @@ public class Twr_Rotation : MonoBehaviour
 
     Transform GetClosestEnemy()
     {
+        //Want make a feature to make this function only fired when the current sentry doesn't have any target
+        // or there's a new command priority from player
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
         Transform closest = null;
         float minDist = Mathf.Infinity;
@@ -29,6 +31,11 @@ public class Twr_Rotation : MonoBehaviour
             {
                 minDist = dist;
                 closest = hit.transform;
+            }
+            if (hit.GetComponent<Emy_BeingTarget>().isTargetted)
+            {
+                closest = hit.transform;
+                return closest;
             }
         }
         return closest;

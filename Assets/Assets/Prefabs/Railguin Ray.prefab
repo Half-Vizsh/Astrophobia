@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prj_LigthningRay
   duration: 0.1
   scale: 5
-  lifeTime: 2
+  lifeTime: 0.75
 --- !u!1 &7841977961551459919
 GameObject:
   m_ObjectHideFlags: 0
