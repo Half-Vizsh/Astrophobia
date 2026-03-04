@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 7263448206911128641}
   - component: {fileID: 8747701178280880019}
   - component: {fileID: 6296128037106733430}
+  - component: {fileID: 5368012777920749142}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -199,7 +200,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8747701178280880019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,3 +297,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Health
   maxHP: 100
   invisibleDuration: 0
+--- !u!114 &5368012777920749142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582239015959793914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d052860ae488794408163a4433543bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ply_Command
+  mCamera: {fileID: 0}
+  enemy:
+    serializedVersion: 2
+    m_Bits: 64

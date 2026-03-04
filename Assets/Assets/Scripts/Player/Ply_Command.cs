@@ -22,15 +22,13 @@ public class Ply_Command : MonoBehaviour
         Collider2D ObjDetected = Physics2D.OverlapPoint(pos, enemy);
         if (ObjDetected != null)
         {
-            Debug.Log ("something detected");
             nextEmy = ObjDetected.gameObject;
             if (currentEmy == null) currentEmy = nextEmy; //If there's no enemy previously
-            else
-            {
+            else{
                 currentEmy.GetComponent<Emy_BeingTarget>().isTargetted = false;
                 currentEmy = nextEmy; //If new enemy were being targeted, make the old isTargetted false and switch target
             }
             currentEmy.GetComponent<Emy_BeingTarget>().isTargetted = true;
-        }else Debug.Log("Nothing detected");
+        }
     }
 }
