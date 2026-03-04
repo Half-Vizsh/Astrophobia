@@ -1,8 +1,9 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class Twr_Rotation : MonoBehaviour
 {
-    public bool IsTargetting;
+    public bool IsRotating;
     public float rotateSpeed;
     public float attackRange = 5f;
     public LayerMask enemyLayer;
@@ -15,7 +16,6 @@ public class Twr_Rotation : MonoBehaviour
             RotateTowards(NearbyEnemy);
         }
     }
-
     Transform GetClosestEnemy()
     {
         //Want make a feature to make this function only fired when the current sentry doesn't have any target

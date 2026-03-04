@@ -9,6 +9,10 @@ public class Ply_Command : MonoBehaviour
     Vector2 position;
     GameObject currentEmy;
     GameObject nextEmy;
+    void Start()
+    {
+        mCamera = GameObject.FindAnyObjectByType<Camera>();
+    }
     void Update()
     {
         Vector3 MousePos = Mouse.current.position.ReadValue();
