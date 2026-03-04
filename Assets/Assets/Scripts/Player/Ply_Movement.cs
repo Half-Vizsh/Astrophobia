@@ -15,6 +15,7 @@ public class Ply_Movement : MonoBehaviour
     public InputAction DodgeButton;
     [SerializeField] Ply_Health ply_Health;
     [SerializeField] float dodgeDur;
+    [SerializeField] float dodgeCD;
     [SerializeField] float DodgeSpeed;
     Vector2 facing = new Vector2 (0,1);
     bool isDodging = false;
@@ -47,18 +48,24 @@ public class Ply_Movement : MonoBehaviour
             StartCoroutine(Dodge());
             return;
         }
-        rb2D.linearVelocity = new Vector2 (move.x*speed,move.y*speed);
-        // Vector2 position = rb2D.position + speed * Time.deltaTime * move;
-        // rb2D.MovePosition(position);
+        if (!isDodging)rb2D.linearVelocity = move.normalized*speed;
     }
 
     private IEnumerator Dodge()
     {
         isDodging = true;
         canDodge = false;
-        rb2D.linearVelocity = new Vector2 (facing.x*DodgeSpeed,facing.y*DodgeSpeed);
-        yield return new WaitForSeconds(dodgeDur);
+        var timeElapse = 0f;
+        while (timeElapse < dodgeDur)
+        {
+            var t = timeElapse/dodgeDur;
+            float gradualSpeed = 1f-t;
+            rb2D.linearVelocity = facing.normalized*DodgeSpeed*gradualSpeed;
+            timeElapse += Time.deltaTime;
+            yield return new WaitForFixedUpdate();
+        }
         isDodging = false;
+        yield return new WaitForSeconds(dodgeCD);
         canDodge = true;
     }
 }
