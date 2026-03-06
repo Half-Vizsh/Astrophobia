@@ -416,7 +416,7 @@ MonoBehaviour:
     m_Flags: 0
   ply_Health: {fileID: 1234145437}
   dodgeDur: 0.15
-  dodgeCD: 0.8
+  dodgeCD: 0
   DodgeSpeed: 30
 --- !u!4 &1234145439
 Transform:

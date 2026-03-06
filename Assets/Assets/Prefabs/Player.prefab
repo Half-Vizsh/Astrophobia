@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1267830177, guid: 8f7a60065e3984c489b9c4d41bc3dc4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 5368012777920749142}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,7 +282,8 @@ MonoBehaviour:
     m_Flags: 0
   ply_Health: {fileID: 0}
   dodgeDur: 0.2
-  DodgeSpeed: 50
+  dodgeCD: 0.5
+  DodgeSpeed: 25
 --- !u!114 &6296128037106733430
 MonoBehaviour:
   m_ObjectHideFlags: 0

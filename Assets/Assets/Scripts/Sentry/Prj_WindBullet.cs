@@ -5,7 +5,11 @@ public class Prj_WindBullet : MonoBehaviour
 {
     public Rigidbody2D rb2D;
     public float speed;
-    public float PushPower;
+    public float lifeTime;
+    void Start()
+    {
+        Destroy(gameObject, lifeTime);
+    }
     public void FixedUpdate()
     {
         rb2D.AddForce(transform.up * speed);

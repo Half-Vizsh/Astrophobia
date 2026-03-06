@@ -12,7 +12,7 @@ public class Prj_LigthningRay : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
     private IEnumerator ScaleOverTime(float duration, float scale) {
-    //This is when the ray shooted
+    //Triggered when the ray shooted
     var startScale = transform.localScale;
     var endScale = new Vector3 (startScale.x, scale, startScale.z);
     var elapsed = 0f;

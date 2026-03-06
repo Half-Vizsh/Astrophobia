@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5756ed570d47154387b1396273f613d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Twr_Rotation
-  IsTargetting: 0
+  IsRotating: 0
   rotateSpeed: 180
   attackRange: 5
   enemyLayer:
@@ -136,7 +136,7 @@ MonoBehaviour:
   BulletPoint3: {fileID: 4522827208638423563}
   BulletPrefab: {fileID: 6122380218485237729, guid: fb21bcd263122fa43b656e965429b17a, type: 3}
   shotCD: 2
-  bulletInterval: 0.5
+  bulletInterval: 0.4
 --- !u!1 &6466197173998829773
 GameObject:
   m_ObjectHideFlags: 0
