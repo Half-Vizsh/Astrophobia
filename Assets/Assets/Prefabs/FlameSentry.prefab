@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 9024911548171980378}
   m_Layer: 0
   m_Name: FlameSentry
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,7 +267,6 @@ MonoBehaviour:
   SentryDamage: 1
   cooldown: 2
   ThrowerDur: 3
-  fireFX: {fileID: 0}
   Colli: {fileID: 4917477754910568868}
 --- !u!114 &673385712019861319
 MonoBehaviour:

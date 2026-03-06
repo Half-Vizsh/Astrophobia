@@ -9,11 +9,11 @@ public class Test_FireTurretBehaviour : MonoBehaviour
     public float cooldown;
     public float ThrowerDur;
     private float currentCD;
-    [SerializeField] ParticleSystem fireFX;
+    //[SerializeField] ParticleSystem fireFX;
     [SerializeField] PolygonCollider2D Colli;
     void Start()
     {
-        fireFX.Stop();
+        //fireFX.Stop();
     }
     void Update()
     {
@@ -30,10 +30,10 @@ public class Test_FireTurretBehaviour : MonoBehaviour
     }
     public IEnumerator FlameThrowing()
     {
-        fireFX.Play();
+        //fireFX.Play();
         Colli.enabled = true;
         yield return new WaitForSeconds(ThrowerDur);
-        fireFX.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        //fireFX.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
         Colli.enabled = false;
         currentCD = cooldown;
     }
