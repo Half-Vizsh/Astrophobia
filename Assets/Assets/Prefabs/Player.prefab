@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3849523439323751062}
   - component: {fileID: 8425449289398990338}
+  - component: {fileID: 4362879545010487935}
   m_Layer: 0
   m_Name: Player_Sprite
   m_TagString: Untagged
@@ -91,6 +92,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &4362879545010487935
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2391076334033005256}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2fb3431d7e5a433488c6d9427ece1c91, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4582239015959793914
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +306,7 @@ MonoBehaviour:
   ply_Health: {fileID: 0}
   dodgeDur: 0.2
   dodgeCD: 0.5
-  DodgeSpeed: 25
+  DodgeSpeed: 15
 --- !u!114 &6296128037106733430
 MonoBehaviour:
   m_ObjectHideFlags: 0

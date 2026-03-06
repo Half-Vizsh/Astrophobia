@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2682864505218964482}
   m_Layer: 0
-  m_Name: RailgunSentry Test
+  m_Name: ThundSentry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2682864505218964482}
@@ -112,9 +112,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1659556720783590786, guid: 1ef035e9a1123354e8395c48d36ddf3b, type: 3}
+  m_Sprite: {fileID: 4621479421780326019, guid: 77f92e53a1fff1c478525a8ddde9ce18, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -150,8 +150,8 @@ Transform:
   m_GameObject: {fileID: 5777033914101702430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.276, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: 0.302, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2598754769504674402}
@@ -203,9 +203,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 11
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1635779461297494539, guid: cb91e4b99119cc44ca7312155e52351e, type: 3}
+  m_Sprite: {fileID: -843826628398323586, guid: bbda31cfcef7e7d4bb3bd2212da1b147, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5756ed570d47154387b1396273f613d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Twr_Rotation
-  IsTargetting: 0
+  IsRotating: 0
   rotateSpeed: 180
   attackRange: 5
   enemyLayer:
