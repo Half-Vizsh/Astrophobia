@@ -17,14 +17,15 @@ public class Test_WindTurret : MonoBehaviour
     void Start()
     {
         //Initial CD
-         NextShot = 3f;
+         NextShot = shotCD;
     }
     void Update()
     {
-        if (NextShot < Time.time)
+        NextShot-=Time.deltaTime;
+        if (NextShot <= 0)
         {
             StartCoroutine(FiringBarrage());
-            NextShot+=shotCD;
+            NextShot=shotCD;
         }
     }
     IEnumerator FiringBarrage()

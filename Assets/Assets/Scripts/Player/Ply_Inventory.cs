@@ -5,14 +5,23 @@ using UnityEngine.InputSystem;
 
 public class Ply_Inventory : MonoBehaviour
 {
-    public int cound_Ice; public int count_Fire; public int count_Thund; public int count_Destr;
+    public Dictionary<String, int> PlayerInventory = new (); 
+    // public int cound_Ice; public int count_Fire; public int count_Thund; //public int count_Destr;
     public GH_BuildManager BuildManager;
     public PlayerInputActions HotbarInput;
     public int currentChoice; // This will be given to the BuildManager
     void Awake()
     {
         HotbarInput = new PlayerInputActions();
+        PlayerInventory.Add("Thun", 1);
+        PlayerInventory.Add("Fire", 1);
+        PlayerInventory.Add("Ice", 1);
     }
+    public void SelectSlot(int numPressed)
+    {
+        currentChoice = numPressed;
+    }
+    //Input for reading number
     public void OnEnable()
     {
         HotbarInput.Enable();   
@@ -24,9 +33,5 @@ public class Ply_Inventory : MonoBehaviour
     public void OnDisable()
     {
         HotbarInput.Disable();
-    }
-    public void SelectSlot(int numPressed)
-    {
-        currentChoice = numPressed;
     }
 }

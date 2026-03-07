@@ -22501,7 +22501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9828739, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.11576611, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -22928,7 +22928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.939844, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.9286411, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23115,7 +23115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.92926645, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23232,10 +23232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77472015746648446ae022ed755c7183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ply_Inventory
-  cound_Ice: 0
-  count_Fire: 0
-  count_Thund: 0
-  count_Destr: 0
   BuildManager: {fileID: 660851411}
   currentChoice: 0
 --- !u!1 &2077666973
