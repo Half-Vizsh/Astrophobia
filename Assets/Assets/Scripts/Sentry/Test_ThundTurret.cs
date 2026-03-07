@@ -1,22 +1,24 @@
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class Test_ThundTurret : MonoBehaviour
 {
     public Transform rayPoint;
     public GameObject rayPrefab;
     public float shotCD;
-    private float NextShot;
+    private float currentCD;
      void Start()
     {
-        //Initial cooldown
-        NextShot = 3f;
+        currentCD = shotCD; //InitialCD
     }
     void Update()
     {
-        if (NextShot < Time.time)
+        currentCD -= Time.deltaTime;
+        if (currentCD<=0)
         {
             GameObject ray = Instantiate (rayPrefab, rayPoint.position, transform.rotation);
-            NextShot +=shotCD;
+            currentCD = shotCD;
         }
+        
     }
 }

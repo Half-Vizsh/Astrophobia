@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dummy
   - Obstacle
+  - Game Handler
   layers:
   - Default
   - TransparentFX
