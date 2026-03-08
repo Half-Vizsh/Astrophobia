@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Plot : MonoBehaviour
 {
-    [Header("Plot Coordinate")]
     public int row;
     public int col;
 
