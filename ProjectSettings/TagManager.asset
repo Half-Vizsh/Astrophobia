@@ -7,15 +7,18 @@ TagManager:
   - Dummy
   - Obstacle
   - Game Handler
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Plot
   - Water
   - UI
   - Enemy
   - 
+  - Player
+  - Enemy
   - 
   - 
   - 
