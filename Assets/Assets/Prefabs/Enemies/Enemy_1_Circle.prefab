@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 9127505948590538586}
   - component: {fileID: 1902710321320028577}
   - component: {fileID: 7629945975849212729}
-  - component: {fileID: -7779594661318589424}
   - component: {fileID: -6522819790985500070}
+  - component: {fileID: 6919925344191653831}
   m_Layer: 7
-  m_Name: Enemy_1
+  m_Name: Enemy_1_Circle
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,12 +86,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 9aef12ee0f2c3c540981153b4d24bfe5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a6de51b355fa2645bbee3d9a8fef946, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.35, y: 1.35}
+  m_Size: {x: 0.26, y: 0.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -157,7 +157,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &7629945975849212729
 MonoBehaviour:
@@ -172,22 +172,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
   maxSpeed: 3
-  acceleration: 10
+  acceleration: 6
   turnSpeed: 360
   separationRadius: 0.5
   separationStrength: 1.5
---- !u!114 &-7779594661318589424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8350322886173844726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 226b97ea609a675428db361af2e6b509, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
 --- !u!114 &-6522819790985500070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,3 +190,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyLifetime
   minLifetime: 8
   maxLifetime: 12
+--- !u!114 &6919925344191653831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350322886173844726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226b97ea609a675428db361af2e6b509, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
+  knockbackForce: 3.2
+  knockbackControlDelay: 0.35
+  knockbackDrag: 4.5
+  orbitStrength: 1.2
+  orbitDistance: 1.5
+  arrivalDistance: 0.8
