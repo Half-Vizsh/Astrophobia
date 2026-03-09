@@ -3,28 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-<<<<<<< HEAD
-  - Dummy
-  - Obstacle
-  - Game Handler
-=======
->>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
-  - Enemy
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Plot
+  - 
   - Water
   - UI
-<<<<<<< HEAD
-  - Enemy
   - 
-=======
->>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
-  - Player
-  - Enemy
+  - 
   - 
   - 
   - 
