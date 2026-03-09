@@ -4,9 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<< HEAD
   - Dummy
   - Obstacle
   - Game Handler
+=======
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
   - Enemy
   layers:
   - Default
@@ -15,8 +18,11 @@ TagManager:
   - Plot
   - Water
   - UI
+<<<<<<< HEAD
   - Enemy
   - 
+=======
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
   - Player
   - Enemy
   - 

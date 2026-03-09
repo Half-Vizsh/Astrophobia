@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
 
     Vector2 velocity;
 
+<<<<<<< HEAD
     // Knockback parameters
     public float knockbackForce = 3.2f;
     public float knockbackControlDelay = 0.35f;
@@ -21,6 +22,8 @@ public class EnemyMovement : MonoBehaviour
     public float orbitDistance = 1.5f;
     public float arrivalDistance = 0.8f;
 
+=======
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -30,11 +33,15 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+<<<<<<< HEAD
         originalDrag = rb.linearDamping;
+=======
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
     }
 
     void FixedUpdate()
     {
+<<<<<<< HEAD
         if (knockbackTimer > 0f)
         {
             knockbackTimer -= Time.fixedDeltaTime;
@@ -64,6 +71,14 @@ public class EnemyMovement : MonoBehaviour
         velocity = Vector2.MoveTowards(
             rb.linearVelocity,
             target,
+=======
+        Vector2 desired = SeekPlayer() + Separation();
+        desired = desired.normalized * stats.maxSpeed;
+
+        velocity = Vector2.MoveTowards(
+            velocity,
+            desired,
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
             stats.acceleration * Time.fixedDeltaTime
         );
 
@@ -72,6 +87,7 @@ public class EnemyMovement : MonoBehaviour
 
     Vector2 SeekPlayer()
     {
+<<<<<<< HEAD
         Vector2 toPlayer = player.position - transform.position;
         float distance = toPlayer.magnitude;
 
@@ -96,6 +112,10 @@ public class EnemyMovement : MonoBehaviour
         }
 
         return Vector2.zero;
+=======
+        Vector2 dir = player.position - transform.position;
+        return dir.normalized;
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
     }
 
     Vector2 Separation()
@@ -116,13 +136,18 @@ public class EnemyMovement : MonoBehaviour
                 continue;
 
             Vector2 away = transform.position - c.transform.position;
+<<<<<<< HEAD
 
             if (away.magnitude > 0)
                 force += away.normalized / away.magnitude;
+=======
+            force += away.normalized / away.magnitude;
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
         }
 
         return force * stats.separationStrength;
     }
+<<<<<<< HEAD
 
     public void ApplyKnockback(Vector2 sourcePosition)
     {
@@ -142,4 +167,6 @@ public class EnemyMovement : MonoBehaviour
             ApplyKnockback(collision.transform.position);
         }
     }
+=======
+>>>>>>> b854c84a6d7aa5f8880e0befaa05c876c9192107
 }
