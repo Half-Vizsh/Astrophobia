@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: ace412d3ec260ae45a7334ef6610446d
+guid: cfa2cf1297e52dd4eb4b4026149f1877
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6419577401895470937
-    second: player_craft_0
+      213: 427759531896952342
+    second: flamethrower_postshoot_0
   - first:
-      213: -6906039312788154432
-    second: player_craft_1
+      213: 7362585993979479338
+    second: flamethrower_postshoot_1
   - first:
-      213: -3884362779505330973
-    second: player_craft_2
+      213: 5716655026991601746
+    second: flamethrower_postshoot_2
   - first:
-      213: -6531623946789948280
-    second: player_craft_3
+      213: 8212950078559591132
+    second: flamethrower_postshoot_3
   - first:
-      213: 2912460165459389493
-    second: player_craft_4
+      213: -6030701252407829948
+    second: flamethrower_postshoot_4
   - first:
-      213: 2643919021936265924
-    second: player_craft_5
-  - first:
-      213: 2139076395402624293
-    second: player_craft_6
-  - first:
-      213: 6735289773528136958
-    second: player_craft_7
-  - first:
-      213: 3949661345356203731
-    second: player_craft_8
-  - first:
-      213: 2284250539454280708
-    second: player_craft_9
+      213: -303638032770662239
+    second: flamethrower_postshoot_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_craft_0
+      name: flamethrower_postshoot_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 13
-        width: 17
-        height: 21
+        x: 14
+        y: 43
+        width: 50
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 957ca1872abe61950800000000000000
-      internalID: 6419577401895470937
+      spriteID: 61651042705bfe500800000000000000
+      internalID: 427759531896952342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_1
+      name: flamethrower_postshoot_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 13
-        width: 18
-        height: 20
+        x: 59
+        y: 81
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c71164b5d1d820a0800000000000000
-      internalID: -6906039312788154432
+      spriteID: a25c96fe3f82d2660800000000000000
+      internalID: 7362585993979479338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_2
+      name: flamethrower_postshoot_2
       rect:
         serializedVersion: 2
-        x: 111
-        y: 13
-        width: 20
-        height: 21
+        x: 94
+        y: 52
+        width: 51
+        height: 40
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e4f5dcd1a8f71ac0800000000000000
-      internalID: -3884362779505330973
+      spriteID: 258194b7573a55f40800000000000000
+      internalID: 5716655026991601746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_3
+      name: flamethrower_postshoot_3
       rect:
         serializedVersion: 2
-        x: 159
-        y: 13
-        width: 23
-        height: 21
+        x: 173
+        y: 80
+        width: 7
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 884762d50a20b55a0800000000000000
-      internalID: -6531623946789948280
+      spriteID: cda9f8615924af170800000000000000
+      internalID: 8212950078559591132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_4
+      name: flamethrower_postshoot_4
       rect:
         serializedVersion: 2
-        x: 207
-        y: 13
-        width: 17
-        height: 21
+        x: 174
+        y: 60
+        width: 52
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53caea0f6132b6820800000000000000
-      internalID: 2912460165459389493
+      spriteID: 44a5ab7b925ae4ca0800000000000000
+      internalID: -6030701252407829948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_5
+      name: flamethrower_postshoot_5
       rect:
         serializedVersion: 2
-        x: 255
-        y: 13
-        width: 18
-        height: 20
+        x: 254
+        y: 74
+        width: 52
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,96 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cac865a75611b420800000000000000
-      internalID: 2643919021936265924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_craft_6
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 13
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 52d7567f5a68fad10800000000000000
-      internalID: 2139076395402624293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_craft_7
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 13
-        width: 23
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: efc377a2d5e887d50800000000000000
-      internalID: 6735289773528136958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_craft_8
-      rect:
-        serializedVersion: 2
-        x: 399
-        y: 13
-        width: 17
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3d64c01411400d630800000000000000
-      internalID: 3949661345356203731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_craft_9
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 13
-        width: 18
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 404ba2e53c943bf10800000000000000
-      internalID: 2284250539454280708
+      spriteID: 1a0086461d249cbf0800000000000000
+      internalID: -303638032770662239
       vertices: []
       indices: 
       edges: []
@@ -386,16 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player_craft_0: 6419577401895470937
-      player_craft_1: -6906039312788154432
-      player_craft_2: -3884362779505330973
-      player_craft_3: -6531623946789948280
-      player_craft_4: 2912460165459389493
-      player_craft_5: 2643919021936265924
-      player_craft_6: 2139076395402624293
-      player_craft_7: 6735289773528136958
-      player_craft_8: 3949661345356203731
-      player_craft_9: 2284250539454280708
+      flamethrower_postshoot_0: 427759531896952342
+      flamethrower_postshoot_1: 7362585993979479338
+      flamethrower_postshoot_2: 5716655026991601746
+      flamethrower_postshoot_3: 8212950078559591132
+      flamethrower_postshoot_4: -6030701252407829948
+      flamethrower_postshoot_5: -303638032770662239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

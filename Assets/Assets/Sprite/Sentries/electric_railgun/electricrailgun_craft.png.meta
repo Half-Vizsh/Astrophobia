@@ -1,37 +1,40 @@
 fileFormatVersion: 2
-guid: ace412d3ec260ae45a7334ef6610446d
+guid: b61c860e5552e8c498dea3806646249e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6419577401895470937
-    second: player_craft_0
+      213: -5424914314431408199
+    second: electricrailgun_craft_0
   - first:
-      213: -6906039312788154432
-    second: player_craft_1
+      213: 2810265955814392023
+    second: electricrailgun_craft_1
   - first:
-      213: -3884362779505330973
-    second: player_craft_2
+      213: -3700876552234439854
+    second: electricrailgun_craft_2
   - first:
-      213: -6531623946789948280
-    second: player_craft_3
+      213: -1929692669341983275
+    second: electricrailgun_craft_3
   - first:
-      213: 2912460165459389493
-    second: player_craft_4
+      213: 7864429161250517408
+    second: electricrailgun_craft_4
   - first:
-      213: 2643919021936265924
-    second: player_craft_5
+      213: 4126135732329933469
+    second: electricrailgun_craft_5
   - first:
-      213: 2139076395402624293
-    second: player_craft_6
+      213: -4707157299820986114
+    second: electricrailgun_craft_6
   - first:
-      213: 6735289773528136958
-    second: player_craft_7
+      213: -3504940809230722820
+    second: electricrailgun_craft_7
   - first:
-      213: 3949661345356203731
-    second: player_craft_8
+      213: 25312373237137012
+    second: electricrailgun_craft_8
   - first:
-      213: 2284250539454280708
-    second: player_craft_9
+      213: -4775741994028785831
+    second: electricrailgun_craft_9
+  - first:
+      213: -5694566981779868206
+    second: electricrailgun_craft_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -153,13 +156,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_craft_0
+      name: electricrailgun_craft_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 13
-        width: 17
-        height: 21
+        x: 12
+        y: 19
+        width: 24
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,42 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 957ca1872abe61950800000000000000
-      internalID: 6419577401895470937
+      spriteID: 9b752676c25d6b4b0800000000000000
+      internalID: -5424914314431408199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_1
+      name: electricrailgun_craft_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 13
-        width: 18
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c71164b5d1d820a0800000000000000
-      internalID: -6906039312788154432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_craft_2
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 13
+        x: 14
+        y: 12
         width: 20
-        height: 21
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e4f5dcd1a8f71ac0800000000000000
-      internalID: -3884362779505330973
+      spriteID: 7d0c0b45ff1100720800000000000000
+      internalID: 2810265955814392023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_3
+      name: electricrailgun_craft_2
       rect:
         serializedVersion: 2
-        x: 159
-        y: 13
-        width: 23
-        height: 21
+        x: 60
+        y: 12
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 884762d50a20b55a0800000000000000
-      internalID: -6531623946789948280
+      spriteID: 25b6e724268d3acc0800000000000000
+      internalID: -3700876552234439854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_4
+      name: electricrailgun_craft_3
       rect:
         serializedVersion: 2
-        x: 207
-        y: 13
-        width: 17
-        height: 21
+        x: 108
+        y: 12
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53caea0f6132b6820800000000000000
-      internalID: 2912460165459389493
+      spriteID: 5dd123ebdba5835e0800000000000000
+      internalID: -1929692669341983275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_5
+      name: electricrailgun_craft_4
       rect:
         serializedVersion: 2
-        x: 255
-        y: 13
-        width: 18
-        height: 20
+        x: 156
+        y: 12
+        width: 24
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +259,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cac865a75611b420800000000000000
-      internalID: 2643919021936265924
+      spriteID: 0a17f8597a0142d60800000000000000
+      internalID: 7864429161250517408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_6
+      name: electricrailgun_craft_5
       rect:
         serializedVersion: 2
-        x: 303
-        y: 13
-        width: 20
-        height: 21
+        x: 204
+        y: 12
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52d7567f5a68fad10800000000000000
-      internalID: 2139076395402624293
+      spriteID: d9a629c569af24930800000000000000
+      internalID: 4126135732329933469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_7
+      name: electricrailgun_craft_6
       rect:
         serializedVersion: 2
-        x: 351
-        y: 13
-        width: 23
-        height: 21
+        x: 252
+        y: 12
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,20 +303,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: efc377a2d5e887d50800000000000000
-      internalID: 6735289773528136958
+      spriteID: ef0884a1061dcaeb0800000000000000
+      internalID: -4707157299820986114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_8
+      name: electricrailgun_craft_7
       rect:
         serializedVersion: 2
-        x: 399
-        y: 13
-        width: 17
-        height: 21
+        x: 300
+        y: 12
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,20 +325,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d64c01411400d630800000000000000
-      internalID: 3949661345356203731
+      spriteID: cf8580b67e2fb5fc0800000000000000
+      internalID: -3504940809230722820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_craft_9
+      name: electricrailgun_craft_8
       rect:
         serializedVersion: 2
-        x: 447
-        y: 13
-        width: 18
-        height: 20
+        x: 348
+        y: 12
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,8 +347,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 404ba2e53c943bf10800000000000000
-      internalID: 2284250539454280708
+      spriteID: 47eb837287de95000800000000000000
+      internalID: 25312373237137012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricrailgun_craft_9
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 12
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f9ffa95f729bdb0800000000000000
+      internalID: -4775741994028785831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: electricrailgun_craft_10
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 11
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d5b75d4085d8f0b0800000000000000
+      internalID: -5694566981779868206
       vertices: []
       indices: 
       edges: []
@@ -386,16 +411,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player_craft_0: 6419577401895470937
-      player_craft_1: -6906039312788154432
-      player_craft_2: -3884362779505330973
-      player_craft_3: -6531623946789948280
-      player_craft_4: 2912460165459389493
-      player_craft_5: 2643919021936265924
-      player_craft_6: 2139076395402624293
-      player_craft_7: 6735289773528136958
-      player_craft_8: 3949661345356203731
-      player_craft_9: 2284250539454280708
+      electricrailgun_craft_0: -5424914314431408199
+      electricrailgun_craft_1: 2810265955814392023
+      electricrailgun_craft_10: -5694566981779868206
+      electricrailgun_craft_2: -3700876552234439854
+      electricrailgun_craft_3: -1929692669341983275
+      electricrailgun_craft_4: 7864429161250517408
+      electricrailgun_craft_5: 4126135732329933469
+      electricrailgun_craft_6: -4707157299820986114
+      electricrailgun_craft_7: -3504940809230722820
+      electricrailgun_craft_8: 25312373237137012
+      electricrailgun_craft_9: -4775741994028785831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
