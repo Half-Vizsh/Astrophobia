@@ -24266,14 +24266,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8425449289398990338, guid: aac029cff47d9174eae7470918430a38, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425449289398990338, guid: aac029cff47d9174eae7470918430a38, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425449289398990338, guid: aac029cff47d9174eae7470918430a38, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -24292,9 +24284,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4582239015959793914, guid: aac029cff47d9174eae7470918430a38, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1910010977}
-    - targetCorrespondingSourceObject: {fileID: 4582239015959793914, guid: aac029cff47d9174eae7470918430a38, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1910010983}
   m_SourcePrefab: {fileID: 100100000, guid: aac029cff47d9174eae7470918430a38, type: 3}
 --- !u!1 &1710335578
 GameObject:
@@ -24465,22 +24454,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ply_Inventory
   BuildManager: {fileID: 660851411}
   currentChoice: 0
---- !u!114 &1910010983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648738813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f7b66fbca1872a49915130cdb0f3c54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ply_Animator
-  animator: {fileID: 0}
-  rb2D: {fileID: 0}
-  MoveScript: {fileID: 0}
-  sr: {fileID: 0}
 --- !u!1 &2077666973
 GameObject:
   m_ObjectHideFlags: 0

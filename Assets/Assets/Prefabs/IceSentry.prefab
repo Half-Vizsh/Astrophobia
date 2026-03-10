@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91325832cd4e22542827003cb223a1f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Test_WindTurret
+  TurretAnimator: {fileID: 7216405488048258379}
   BulletPoint: {fileID: 2476755302595826601}
   BulletPoint2: {fileID: 2357724615581473459}
   BulletPoint3: {fileID: 4522827208638423563}

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1813688708579838092}
   - component: {fileID: 7929099112932714751}
   - component: {fileID: 1339820382505743483}
-  - component: {fileID: 1043573174640186290}
+  - component: {fileID: 6791812039926245609}
   m_Layer: 0
-  m_Name: Wind Bullet
+  m_Name: Ice Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindBullet
   rb2D: {fileID: 1813688708579838092}
-  speed: 20
+  speed: 50
   lifeTime: 5
 --- !u!70 &1339820382505743483
 CapsuleCollider2D:
@@ -174,7 +174,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!95 &1043573174640186290
+--- !u!95 &6791812039926245609
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ Animator:
   m_GameObject: {fileID: 6122380218485237729}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4aee969cd4758ec4697c6d1a63189f01, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

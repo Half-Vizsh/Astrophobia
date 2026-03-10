@@ -47,9 +47,9 @@ public class Twr_Rotation : MonoBehaviour
         float angle = Mathf.MoveTowardsAngle(transform.eulerAngles.z, targetAngle, rotateSpeed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
-    //  void OnDrawGizmosSelected()
-    // {
-    //     Gizmos.color = Color.red; // Color for when the object is selected
-    //     Gizmos.DrawSphere(transform.position, attackRange); // Draws a sphere (appears as a circle in 2D view)
-    // }
+     void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red; // Color for when the object is selected
+        Gizmos.DrawSphere(transform.position, attackRange); // Draws a sphere (appears as a circle in 2D view)
+    }
 }

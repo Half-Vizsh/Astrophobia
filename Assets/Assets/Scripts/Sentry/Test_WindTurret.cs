@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Test_WindTurret : MonoBehaviour
 {
+    public Animator TurretAnimator;
     public Transform BulletPoint;
     public Transform BulletPoint2;
     public Transform BulletPoint3;
@@ -17,6 +18,7 @@ public class Test_WindTurret : MonoBehaviour
     void Start()
     {
         //Initial CD
+        TurretAnimator = GetComponentInChildren<Animator>();
          NextShot = shotCD;
     }
     void Update()
@@ -30,10 +32,12 @@ public class Test_WindTurret : MonoBehaviour
     }
     IEnumerator FiringBarrage()
     {
+        TurretAnimator.SetBool("isAttacking", true);
         Instantiate (BulletPrefab, BulletPoint.position, BulletPoint.rotation);
         yield return new WaitForSeconds(bulletInterval);
         Instantiate (BulletPrefab, BulletPoint2.position, BulletPoint2.rotation);
         yield return new WaitForSeconds(bulletInterval);
         Instantiate (BulletPrefab, BulletPoint3.position, BulletPoint3.rotation);
+        TurretAnimator.SetBool("isAttacking", false);
     }
 }
