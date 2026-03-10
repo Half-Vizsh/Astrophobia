@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Twr_Rotation : MonoBehaviour
 {
-    public bool IsRotating;
     public float rotateSpeed;
     public float attackRange = 5f;
     public LayerMask enemyLayer;

@@ -134,6 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186080857773476547}
   - component: {fileID: 4308361502872413693}
+  - component: {fileID: 6143881209679102481}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Untagged
@@ -150,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 5777033914101702430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.302, z: 0}
+  m_LocalPosition: {x: 0, y: 0.362, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -215,6 +216,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &6143881209679102481
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777033914101702430}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fb84b5056ed1faa46bcfa58735d464aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8076218223133380092
 GameObject:
   m_ObjectHideFlags: 0
@@ -240,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 8076218223133380092}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.605, z: 0}
+  m_LocalPosition: {x: 0, y: 1.037, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -293,8 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5756ed570d47154387b1396273f613d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Twr_Rotation
-  IsRotating: 0
-  rotateSpeed: 180
+  rotateSpeed: 260
   attackRange: 5
   enemyLayer:
     serializedVersion: 2
@@ -314,3 +336,6 @@ MonoBehaviour:
   rayPoint: {fileID: 5132425939033771365}
   rayPrefab: {fileID: 5493028679297179347, guid: 24ca867a182534e4eb7cbcb7fe51f09a, type: 3}
   shotCD: 3
+  animator: {fileID: 0}
+  animDur: 0.3785
+  StartTime: 1.525

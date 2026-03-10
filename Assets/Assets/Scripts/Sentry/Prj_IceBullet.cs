@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Prj_WindBullet : MonoBehaviour
+public class Prj_IceBullet : MonoBehaviour
 {
     public Rigidbody2D rb2D;
     public float speed;

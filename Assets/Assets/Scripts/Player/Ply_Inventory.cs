@@ -10,12 +10,13 @@ public class Ply_Inventory : MonoBehaviour
     public GH_BuildManager BuildManager;
     public PlayerInputActions HotbarInput;
     public int currentChoice; // This will be given to the BuildManager
+    [SerializeField] private int initialSupply;
     void Awake()
     {
         HotbarInput = new PlayerInputActions();
-        PlayerInventory.Add("Thun", 1);
-        PlayerInventory.Add("Fire", 1);
-        PlayerInventory.Add("Ice", 1);
+        PlayerInventory.Add("Thun", initialSupply);
+        PlayerInventory.Add("Fire", initialSupply);
+        PlayerInventory.Add("Ice", initialSupply);
     }
     public void SelectSlot(int numPressed)
     {

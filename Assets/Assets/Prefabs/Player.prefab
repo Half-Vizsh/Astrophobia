@@ -128,6 +128,8 @@ GameObject:
   - component: {fileID: 8747701178280880019}
   - component: {fileID: 6296128037106733430}
   - component: {fileID: 5368012777920749142}
+  - component: {fileID: 3569090171904285687}
+  - component: {fileID: 4895514259561268043}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -286,6 +288,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   speed: 4
+  move: {x: 0, y: 0}
   DodgeButton:
     m_Name: Dodge Button
     m_Type: 0
@@ -307,6 +310,8 @@ MonoBehaviour:
   dodgeDur: 0.2
   dodgeCD: 0.5
   DodgeSpeed: 15
+  facing: {x: 0, y: 1}
+  isDodging: 0
 --- !u!114 &6296128037106733430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,3 +342,34 @@ MonoBehaviour:
   enemy:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &3569090171904285687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582239015959793914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77472015746648446ae022ed755c7183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ply_Inventory
+  BuildManager: {fileID: 0}
+  currentChoice: 0
+  initialSupply: 3
+--- !u!114 &4895514259561268043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582239015959793914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7b66fbca1872a49915130cdb0f3c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ply_Animator
+  animator: {fileID: 0}
+  rb2D: {fileID: 0}
+  MoveScript: {fileID: 0}
+  sr: {fileID: 0}
