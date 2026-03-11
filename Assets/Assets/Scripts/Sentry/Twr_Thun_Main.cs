@@ -44,9 +44,9 @@ public class Twr_Thun_Main : MonoBehaviour
         RotateScript.enabled = false;
         animator.SetBool("isAttacking", true);
         GameObject ray = Instantiate (rayPrefab, rayPoint.position, transform.rotation);
-        currentCD = shotCD;
         yield return new WaitForSeconds(animDur);
         animator.SetBool("isAttacking", false);
         RotateScript.enabled = true;
+        currentCD = shotCD;
     }
 }

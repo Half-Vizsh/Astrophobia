@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Twr_Rotation
   rotateSpeed: 260
-  attackRange: 5
+  attackRange: 7
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -338,4 +338,4 @@ MonoBehaviour:
   shotCD: 3
   animator: {fileID: 0}
   animDur: 0.3785
-  StartTime: 1.525
+  StartTime: 1.1

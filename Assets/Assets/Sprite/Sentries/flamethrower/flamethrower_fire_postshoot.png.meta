@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: a8b914fd1e981b84786f0320be860c0a
+guid: cfa2cf1297e52dd4eb4b4026149f1877
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5858549461832252848
-    second: flamethrower_preshoot_0
+      213: 427759531896952342
+    second: flamethrower_postshoot_0
   - first:
-      213: -2398644296355325537
-    second: flamethrower_preshoot_1
+      213: 7362585993979479338
+    second: flamethrower_postshoot_1
   - first:
-      213: -2800851002692674030
-    second: flamethrower_preshoot_2
+      213: 5716655026991601746
+    second: flamethrower_postshoot_2
+  - first:
+      213: 8212950078559591132
+    second: flamethrower_postshoot_3
+  - first:
+      213: -6030701252407829948
+    second: flamethrower_postshoot_4
+  - first:
+      213: -303638032770662239
+    second: flamethrower_postshoot_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 53
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,67 +141,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flamethrower_preshoot_0
+      name: flamethrower_postshoot_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 16
-        width: 31
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 15
+        y: 44
+        width: 51
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 052ce6ced4042bea0800000000000000
-      internalID: -5858549461832252848
+      spriteID: 61651042705bfe500800000000000000
+      internalID: 427759531896952342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_preshoot_1
+      name: flamethrower_postshoot_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 16
-        width: 38
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 94
+        y: 44
+        width: 51
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f99593598bd46bed0800000000000000
-      internalID: -2398644296355325537
+      spriteID: 258194b7573a55f40800000000000000
+      internalID: 5716655026991601746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: flamethrower_preshoot_2
+      name: flamethrower_postshoot_4
       rect:
         serializedVersion: 2
-        x: 175
-        y: 16
-        width: 48
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 172
+        y: 44
+        width: 54
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21ed4b34ad06129d0800000000000000
-      internalID: -2800851002692674030
+      spriteID: 44a5ab7b925ae4ca0800000000000000
+      internalID: -6030701252407829948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flamethrower_postshoot_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 45
+        width: 52
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0086461d249cbf0800000000000000
+      internalID: -303638032770662239
       vertices: []
       indices: 
       edges: []
@@ -201,7 +232,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3264810a750ea7a4e9858399b213edd0
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +242,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      flamethrower_preshoot_0: -5858549461832252848
-      flamethrower_preshoot_1: -2398644296355325537
-      flamethrower_preshoot_2: -2800851002692674030
+      flamethrower_postshoot_0: 427759531896952342
+      flamethrower_postshoot_1: 7362585993979479338
+      flamethrower_postshoot_2: 5716655026991601746
+      flamethrower_postshoot_3: 8212950078559591132
+      flamethrower_postshoot_4: -6030701252407829948
+      flamethrower_postshoot_5: -303638032770662239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
