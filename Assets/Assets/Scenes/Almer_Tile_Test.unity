@@ -289,6 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 38569415}
+  - component: {fileID: 38569416}
   m_Layer: 0
   m_Name: EnemySpawnManager
   m_TagString: Untagged
@@ -311,6 +312,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &38569416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38569413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614f3ab38a31b1c4382e34e804863ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnManager
 --- !u!1001 &65929832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1020,6 +1033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 652262674}
   - component: {fileID: 652262673}
+  - component: {fileID: 652262675}
   m_Layer: 0
   m_Name: EnemySpawnArea-R
   m_TagString: Untagged
@@ -1088,6 +1102,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652262675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652262671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f148d61c22422084580fef399aa0a567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnArea
+  enemyPrefabs:
+  - {fileID: 8350322886173844726, guid: 14c0cb55112207c4fab2056b0a0a086e, type: 3}
+  - {fileID: 8350322886173844726, guid: 274444ecaa21e8d41b08f1c05538832b, type: 3}
+  - {fileID: 8350322886173844726, guid: 3c9209b2dfd37bf48bf1df9cdf91e953, type: 3}
+  minDistanceFromPlayer: 2
+  maxSpawnAttempts: 10
 --- !u!4 &779702772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9219485231140611064, guid: de41d683127ecc747a892d3ab8e310d3, type: 3}
@@ -1856,7 +1888,7 @@ GameObject:
   - component: {fileID: 1127116219}
   - component: {fileID: 1127116223}
   - component: {fileID: 1127116222}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2139,6 +2171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197300859}
   - component: {fileID: 1197300858}
+  - component: {fileID: 1197300860}
   m_Layer: 0
   m_Name: EnemySpawnArea-L
   m_TagString: Untagged
@@ -2207,6 +2240,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1197300860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197300857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f148d61c22422084580fef399aa0a567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnArea
+  enemyPrefabs:
+  - {fileID: 8350322886173844726, guid: 14c0cb55112207c4fab2056b0a0a086e, type: 3}
+  - {fileID: 8350322886173844726, guid: 274444ecaa21e8d41b08f1c05538832b, type: 3}
+  - {fileID: 8350322886173844726, guid: 3c9209b2dfd37bf48bf1df9cdf91e953, type: 3}
+  minDistanceFromPlayer: 2
+  maxSpawnAttempts: 10
 --- !u!1001 &1245769817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2969,7 +3020,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1931333996}
   - component: {fileID: 1931333997}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Player_Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3296,7 +3347,7 @@ GameObject:
   - component: {fileID: 2133513752}
   - component: {fileID: 2133513754}
   - component: {fileID: 2133513753}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Scanner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

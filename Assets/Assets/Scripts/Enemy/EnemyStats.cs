@@ -4,8 +4,8 @@ public class EnemyStats : MonoBehaviour
 {
     [Header("Movement")]
     public float maxSpeed = 3f;
-    public float acceleration = 10f;
-    public float turnSpeed = 360f;
+    public float acceleration = 6f;
+    public float turnSpeed = 270f;
 
     [Header("Swarm")]
     public float separationRadius = 0.5f;

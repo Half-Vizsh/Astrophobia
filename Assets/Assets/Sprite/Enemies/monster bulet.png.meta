@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 4ada185669716874b8959e6617cdcd59
+guid: 865bce866d9c7be408e4a45d3130df33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2531241511545790211
-    second: Enemy3_0
+      213: 2473907515781379543
+    second: monster bulet_0
+  - first:
+      213: 2097319604820472268
+    second: monster bulet_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy3_0
+      name: monster bulet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 108
-        height: 108
+        x: 11
+        y: 7
+        width: 8
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df0279f91493fdcd0800000000000000
-      internalID: -2531241511545790211
+      spriteID: 7d5715d37c5155220800000000000000
+      internalID: 2473907515781379543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 9
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc179c9811d2b1d10800000000000000
+      internalID: 2097319604820472268
       vertices: []
       indices: 
       edges: []
@@ -148,7 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemy3_0: -2531241511545790211
+      monster bulet_0: 2473907515781379543
+      monster bulet_1: 2097319604820472268
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
