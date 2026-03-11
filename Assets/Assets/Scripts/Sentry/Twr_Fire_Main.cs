@@ -26,6 +26,7 @@ public class Twr_Fire_Main : MonoBehaviour
         if (currentCD<=0)
         {
            StartCoroutine(SpreadFlame());
+           currentCD = shotCD;
         } 
     }
     IEnumerator StartUp()
@@ -37,7 +38,6 @@ public class Twr_Fire_Main : MonoBehaviour
     }
     IEnumerator SpreadFlame()
     {
-        currentCD = shotCD;
         animator.SetBool("isAttacking", true);
         RotateScript.enabled = false;
         GameObject Flamethrower = Instantiate (FlamePrefab, FlamePos.position, FlamePos.rotation);

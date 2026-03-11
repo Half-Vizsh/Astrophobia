@@ -11,6 +11,7 @@ public class Emy_Movement : MonoBehaviour
     }
     void Update()
     {
+        if (PlayerObject == null) return;
         distance = Vector2.Distance(PlayerObject.transform.position, transform.position);
         Vector2 direction = PlayerObject.transform.position - transform.position;
         direction.Normalize();

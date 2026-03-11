@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 5fcd7a3e87b7e144788bb33569e2734d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -191267528002034762
+    second: volume bar-Sheet_0
+  - first:
+      213: 1027106798065355199
+    second: volume bar-Sheet_1
+  - first:
+      213: 7031417216591614314
+    second: volume bar-Sheet_2
+  - first:
+      213: 5583894206284366357
+    second: volume bar-Sheet_3
+  - first:
+      213: 2421322848631479200
+    second: volume bar-Sheet_4
+  - first:
+      213: 3014652129433493102
+    second: volume bar-Sheet_5
+  - first:
+      213: 4495917354113056003
+    second: volume bar-Sheet_6
+  - first:
+      213: -8257609316449542781
+    second: volume bar-Sheet_7
+  - first:
+      213: 3177191748386319307
+    second: volume bar-Sheet_8
+  - first:
+      213: 1922949617402869433
+    second: volume bar-Sheet_9
+  - first:
+      213: -1142501718079144739
+    second: volume bar-Sheet_10
+  - first:
+      213: -3138871877174519382
+    second: volume bar-Sheet_11
+  - first:
+      213: 7532664235535116636
+    second: volume bar-Sheet_12
+  - first:
+      213: -545879049993033394
+    second: volume bar-Sheet_13
+  - first:
+      213: -8656284135336502019
+    second: volume bar-Sheet_14
+  - first:
+      213: -1374174518474402905
+    second: volume bar-Sheet_15
+  - first:
+      213: -4854981780964528164
+    second: volume bar-Sheet_16
+  - first:
+      213: 8534596018999181604
+    second: volume bar-Sheet_17
+  - first:
+      213: -6238373168346017421
+    second: volume bar-Sheet_18
+  - first:
+      213: -6063502361115858788
+    second: volume bar-Sheet_19
+  - first:
+      213: -5135609539208386842
+    second: volume bar-Sheet_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: volume bar-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b32f58523b785df0800000000000000
+      internalID: -191267528002034762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb90315e034014e00800000000000000
+      internalID: 1027106798065355199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 5
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61528654bc949160800000000000000
+      internalID: 7031417216591614314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 5
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51201f4223afd7d40800000000000000
+      internalID: 5583894206284366357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 5
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab57375d444a9120800000000000000
+      internalID: 2421322848631479200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 5
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e1240b32236d920800000000000000
+      internalID: 3014652129433493102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 5
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d3c6f5305b46e30800000000000000
+      internalID: 4495917354113056003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d911fc314176d80800000000000000
+      internalID: -8257609316449542781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 5
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb6ed9cf07a71c20800000000000000
+      internalID: 3177191748386319307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 5
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b675422d70bfaa10800000000000000
+      internalID: 1922949617402869433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 5
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc7e9a9db40520f0800000000000000
+      internalID: -1142501718079144739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 5
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa99c8d78ac7074d0800000000000000
+      internalID: -3138871877174519382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c592c536636698860800000000000000
+      internalID: 7532664235535116636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 5
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4966de65e5ac68f0800000000000000
+      internalID: -545879049993033394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 5
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc1b6e1173bed780800000000000000
+      internalID: -8656284135336502019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 5
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a390fe5e83fdece0800000000000000
+      internalID: -1374174518474402905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdfad920bc3af9cb0800000000000000
+      internalID: -4854981780964528164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 5
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421c8ed6cd9f07670800000000000000
+      internalID: 8534596018999181604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 5
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371586cd7a8dc69a0800000000000000
+      internalID: -6238373168346017421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 5
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9862f67abc1adba0800000000000000
+      internalID: -6063502361115858788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: volume bar-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 5
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6606e6556aab8b0800000000000000
+      internalID: -5135609539208386842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      volume bar-Sheet_0: -191267528002034762
+      volume bar-Sheet_1: 1027106798065355199
+      volume bar-Sheet_10: -1142501718079144739
+      volume bar-Sheet_11: -3138871877174519382
+      volume bar-Sheet_12: 7532664235535116636
+      volume bar-Sheet_13: -545879049993033394
+      volume bar-Sheet_14: -8656284135336502019
+      volume bar-Sheet_15: -1374174518474402905
+      volume bar-Sheet_16: -4854981780964528164
+      volume bar-Sheet_17: 8534596018999181604
+      volume bar-Sheet_18: -6238373168346017421
+      volume bar-Sheet_19: -6063502361115858788
+      volume bar-Sheet_2: 7031417216591614314
+      volume bar-Sheet_20: -5135609539208386842
+      volume bar-Sheet_3: 5583894206284366357
+      volume bar-Sheet_4: 2421322848631479200
+      volume bar-Sheet_5: 3014652129433493102
+      volume bar-Sheet_6: 4495917354113056003
+      volume bar-Sheet_7: -8257609316449542781
+      volume bar-Sheet_8: 3177191748386319307
+      volume bar-Sheet_9: 1922949617402869433
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -188,7 +188,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.046245188, y: -0.092490315}
+  m_Offset: {x: 0.07996604, y: 0.065864086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -198,7 +198,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5028645, y: 0.81501937}
+  m_Size: {x: 0.61935455, y: 0.8906983}
   m_EdgeRadius: 0
 --- !u!50 &7263448206911128641
 Rigidbody2D:
@@ -325,7 +325,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68255cf317cef945a8ddf88565c6c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Health
-  maxHP: 100
+  maxHP: 5
+  LifeUI: {fileID: 0}
+  LifeSprite:
+  - {fileID: -3677723888259533663, guid: 82951e0337acf114f9a2c412a1662a5f, type: 3}
+  - {fileID: -526986066041695012, guid: 0ecb959220ff8ff4b9d1170e535658d7, type: 3}
+  - {fileID: 5871174058966458396, guid: 1cbc672322083c040b9efbac1e76face, type: 3}
+  - {fileID: -2867335724425866429, guid: 95c4603e1fc9e0a4eb841f64ecbd6e22, type: 3}
+  - {fileID: -1203253068956136669, guid: 52ea6b439e68079439cd9c09bf5f14a0, type: 3}
+  - {fileID: 5066892534885029086, guid: ebf1a64d4aa3d714f83e0e5a9bc26178, type: 3}
   invisibleDuration: 0
 --- !u!114 &5368012777920749142
 MonoBehaviour:

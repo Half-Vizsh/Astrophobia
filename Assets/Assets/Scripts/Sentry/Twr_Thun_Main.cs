@@ -30,6 +30,7 @@ public class Twr_Thun_Main : MonoBehaviour
         if (currentCD<=0)
         {
            StartCoroutine(ShootRay());
+            currentCD = shotCD;
         } 
     }
     IEnumerator StartUp()
@@ -47,6 +48,5 @@ public class Twr_Thun_Main : MonoBehaviour
         yield return new WaitForSeconds(animDur);
         animator.SetBool("isAttacking", false);
         RotateScript.enabled = true;
-        currentCD = shotCD;
     }
 }
