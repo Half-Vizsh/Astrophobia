@@ -7,29 +7,32 @@ using System;
 using UnityEngine.Rendering;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
+using System.Collections;
 
-public class GH_BuildManager : MonoBehaviour
+public class Ply_Buildmanager : MonoBehaviour
 {
     [Header("Building Stat")]
     public GameObject []TowerPrefabs = new GameObject[3];
-    public bool inBuildingMode;
-    public bool inDestructionMode;
+    public bool inBuildingMode; public bool inDestructionMode;
     public int CurrentTWR;
     [SerializeField] float BuildCD;
     [SerializeField] float BuildRad;
+    [SerializeField] float BuildTime;
     public Ply_Inventory InvAccess;
+    public bool isBuildingSmt;
+    private Rigidbody2D RB2D;
     private float currentCD;
     [Header("Available Land Check")]
     public Tilemap TMP; //Insert the empty Tower Tile layer, forgot why, but sure it's the foundation
     public Tilemap ObstacleTile;
     public Camera Cam;
-    public GameObject player;
+    // public GameObject player;
     Dictionary<Vector3Int, GameObject> occupiedLand = new();
     Vector3 MouseScreenPos; Vector3 MouseWorldPos; Vector3 GridWorldPos; Vector3Int CellPos;
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        InvAccess = player.GetComponent<Ply_Inventory>();
+        //WARNING SPAGHETTI CODE AHEAD
+        InvAccess = GetComponent<Ply_Inventory>();
         inBuildingMode = false;
         inDestructionMode = false;
     }
@@ -48,7 +51,7 @@ public class GH_BuildManager : MonoBehaviour
                 //Try instantiating a cursor of some sort here
                 if (Mouse.current.rightButton.wasPressedThisFrame&&currentCD<=0)
                 {
-                    BuildSomething();
+                    StartCoroutine(BuildSomething());
                 }
             }
         }
@@ -57,6 +60,7 @@ public class GH_BuildManager : MonoBehaviour
             if (occupiedLand.ContainsKey(CellPos))
             {
                 GameObject TowerThere = occupiedLand[CellPos];
+                if (TowerThere == null) return;
                 SpriteRenderer[] allSr = TowerThere.GetComponentsInChildren<SpriteRenderer>();
                 foreach (SpriteRenderer sr in allSr)
                 {
@@ -67,9 +71,9 @@ public class GH_BuildManager : MonoBehaviour
                     Destroy (TowerThere);
                 }    
             }    
+        }
     }
-
-    void BuildSomething()
+    IEnumerator BuildSomething()
     {
         String towerKey;
         switch (CurrentTWR){ 
@@ -78,28 +82,31 @@ public class GH_BuildManager : MonoBehaviour
             case 2:towerKey = "Ice";break;
             default: towerKey = "Not Exist"; break; 
         }
-        if (towerKey.Equals("Not Exist")) return;
+        if (towerKey.Equals("Not Exist")) yield break;
         if (InvAccess.PlayerInventory.ContainsKey(towerKey)&&InvAccess.PlayerInventory[towerKey]>0)
         {
+            isBuildingSmt = true;
             GameObject tower = Instantiate(TowerPrefabs[CurrentTWR], GridWorldPos, quaternion.identity);
             InvAccess.PlayerInventory[towerKey]--;
             Debug.Log (towerKey + "Has been spawned, you have "+InvAccess.PlayerInventory[towerKey]+" left");
             occupiedLand.Add(CellPos, tower);
             currentCD+=BuildCD;
+            
+            yield return new WaitForSeconds (BuildTime);
+            isBuildingSmt = false;
         }
     }
     //Checking whether the grid is empty or not
     bool canPlace(Vector3Int cell, UnityEngine.Vector3 MousePos)
         {
-        Vector3Int playerCell = TMP.WorldToCell(player.transform.position);
-        float dist = UnityEngine.Vector2.Distance(player.transform.position, MousePos);
+        Vector3Int playerCell = TMP.WorldToCell(transform.position);
+        float dist = UnityEngine.Vector2.Distance(transform.position, MousePos);
         if (dist <=1.5) dist = MathF.Floor(dist); 
         return  cell != playerCell 
                 && dist <= BuildRad //Can only placed sentry in 8 surrounding tiles, tweak it in the inspector
                 && !occupiedLand.ContainsKey(cell)
                 &&!ObstacleTile.HasTile(cell);
         }
-    }
     void gettingPositions()
     {
         MouseScreenPos = Mouse.current.position.ReadValue(); 
@@ -110,8 +117,8 @@ public class GH_BuildManager : MonoBehaviour
     }
     void OnDrawGizmos()
     {
-        if(player == null) return;
+        // if(player == null) return;
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(player.transform.position, BuildRad);
+        Gizmos.DrawWireSphere(transform.position, BuildRad);
     }
 }

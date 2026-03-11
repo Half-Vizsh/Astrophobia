@@ -8,9 +8,10 @@ public class Prj_IceBullet : MonoBehaviour
     public float lifeTime;
     void Start()
     {
+        rb2D = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifeTime);
     }
-    public void FixedUpdate()
+    void FixedUpdate()
     {
         rb2D.AddForce(transform.up * speed);
     }
@@ -19,10 +20,10 @@ public class Prj_IceBullet : MonoBehaviour
         if (other.tag == "Dummy")
         {
             other.GetComponent<Dummy_TakingDamage>().TakingDamage(1);
+            Destroy(gameObject);
             //other.GetComponent<Rigidbody2D>().AddForce(transform.up*PushPower);
             // Apply CC here, probably need enemy
         }
-        Destroy(gameObject);
     }
 
 }

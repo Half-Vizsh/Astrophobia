@@ -7,13 +7,14 @@ public class Ply_Inventory : MonoBehaviour
 {
     public Dictionary<String, int> PlayerInventory = new (); 
     // public int cound_Ice; public int count_Fire; public int count_Thund; //public int count_Destr;
-    public GH_BuildManager BuildManager;
+    public Ply_Buildmanager BuildManager;
     public PlayerInputActions HotbarInput;
     public int currentChoice; // This will be given to the BuildManager
     [SerializeField] private int initialSupply;
     void Awake()
     {
         HotbarInput = new PlayerInputActions();
+        BuildManager = GetComponent<Ply_Buildmanager>();
         PlayerInventory.Add("Thun", initialSupply);
         PlayerInventory.Add("Fire", initialSupply);
         PlayerInventory.Add("Ice", initialSupply);

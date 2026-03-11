@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 136bbd4b85b928b4e8f8a0e35c4c377d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindBullet
-  rb2D: {fileID: 1813688708579838092}
-  speed: 50
+  rb2D: {fileID: 0}
+  speed: 5
   lifeTime: 5
 --- !u!70 &1339820382505743483
 CapsuleCollider2D:

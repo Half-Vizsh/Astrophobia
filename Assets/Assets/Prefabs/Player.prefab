@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 5368012777920749142}
   - component: {fileID: 3569090171904285687}
   - component: {fileID: 4895514259561268043}
+  - component: {fileID: 655583317828359959}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -372,4 +373,32 @@ MonoBehaviour:
   animator: {fileID: 0}
   rb2D: {fileID: 0}
   MoveScript: {fileID: 0}
+  BuildScript: {fileID: 0}
   sr: {fileID: 0}
+--- !u!114 &655583317828359959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582239015959793914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27feefcff51364f40b7e2fe001aeb2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GH_BuildManager
+  TowerPrefabs:
+  - {fileID: 1420032317640904997, guid: a1226b31733285d43ab5bcaf1372bef6, type: 3}
+  - {fileID: 2991129206295338482, guid: 155a2299a6b7c364fb8ead7c214d11e5, type: 3}
+  - {fileID: 353070085559256076, guid: 2dc9d7686dbc1454d8e197cde11e4b98, type: 3}
+  inBuildingMode: 0
+  inDestructionMode: 0
+  CurrentTWR: 0
+  BuildCD: 3
+  BuildRad: 1
+  BuildTime: 1.05
+  InvAccess: {fileID: 3569090171904285687}
+  isBuildingSmt: 0
+  TMP: {fileID: 0}
+  ObstacleTile: {fileID: 0}
+  Cam: {fileID: 0}
