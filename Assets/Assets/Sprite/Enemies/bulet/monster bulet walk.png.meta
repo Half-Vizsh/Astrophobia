@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 3296098c70f475f4caad70172a207e40
+guid: d0b1b4dd6579dc44b820e411ac4bdb75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1768592330400461901
-    second: player_dash_0
+      213: 8548223687088211550
+    second: monster bulet walk_0
   - first:
-      213: -350301785380013227
-    second: player_dash_1
+      213: 3061040027401294971
+    second: monster bulet walk_1
   - first:
-      213: -5630700408751817347
-    second: player_dash_2
+      213: 230692794299061333
+    second: monster bulet walk_2
   - first:
-      213: -3021421588914328452
-    second: player_dash_3
+      213: -8236650060687571782
+    second: monster bulet walk_3
+  - first:
+      213: -8025561676197760603
+    second: monster bulet walk_4
+  - first:
+      213: -1185236627936913612
+    second: monster bulet walk_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 18
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,43 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_dash_0
+      name: monster bulet walk_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 13
-        width: 17
-        height: 21
+        x: 12
+        y: 8
+        width: 22
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bb000a55a2b477e0800000000000000
-      internalID: -1768592330400461901
+      spriteID: e560979272461a670800000000000000
+      internalID: 8548223687088211550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_dash_1
+      name: monster bulet walk_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 13
-        width: 17
-        height: 21
+        x: 59
+        y: 7
+        width: 23
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55b3d36d16a732bf0800000000000000
-      internalID: -350301785380013227
+      spriteID: 5541078cfd5933300800000000000000
+      internalID: 230692794299061333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_dash_2
+      name: monster bulet walk_3
       rect:
         serializedVersion: 2
-        x: 112
-        y: 13
-        width: 17
-        height: 21
+        x: 111
+        y: 8
+        width: 22
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7d73bb9fcbbbd1b0800000000000000
-      internalID: -5630700408751817347
+      spriteID: ab48481d86a81bd80800000000000000
+      internalID: -8236650060687571782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_dash_3
+      name: monster bulet walk_4
       rect:
         serializedVersion: 2
-        x: 160
-        y: 13
-        width: 17
-        height: 21
+        x: 158
+        y: 7
+        width: 24
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +196,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7ca014b211c116d0800000000000000
-      internalID: -3021421588914328452
+      spriteID: 5a17e3f3d2a7f9090800000000000000
+      internalID: -8025561676197760603
       vertices: []
       indices: 
       edges: []
@@ -226,7 +206,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0cab8abc16822ea45bc09e5a803b4f2a
+    spriteID: 50cf2129901e4ba448858ad280e3aebc
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +216,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player_dash_0: -1768592330400461901
-      player_dash_1: -350301785380013227
-      player_dash_2: -5630700408751817347
-      player_dash_3: -3021421588914328452
+      monster bulet walk_0: 8548223687088211550
+      monster bulet walk_1: 3061040027401294971
+      monster bulet walk_2: 230692794299061333
+      monster bulet walk_3: -8236650060687571782
+      monster bulet walk_4: -8025561676197760603
+      monster bulet walk_5: -1185236627936913612
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
