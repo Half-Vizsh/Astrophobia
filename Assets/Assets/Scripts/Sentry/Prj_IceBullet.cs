@@ -6,6 +6,11 @@ public class Prj_IceBullet : MonoBehaviour
     public Rigidbody2D rb2D;
     public float speed;
     public float lifeTime;
+    [Header("Stats")]
+    public int damageAmount;
+    public float slowedSpeed;
+    public float slowedAcc;
+    public float slowDur;
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -17,12 +22,12 @@ public class Prj_IceBullet : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Dummy")
+        if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<Dummy_TakingDamage>().TakingDamage(1);
-            Destroy(gameObject);
-            //other.GetComponent<Rigidbody2D>().AddForce(transform.up*PushPower);
-            // Apply CC here, probably need enemy
+            other.GetComponent<Emy_Health>().TakingDamage(damageAmount);
+            EnemyStats SpeedScript = other.GetComponent<EnemyStats>();
+            StartCoroutine(SpeedScript.BeingSlowed(slowDur, slowedSpeed, slowedAcc));            
+            Destroy(gameObject);            
         }
     }
 

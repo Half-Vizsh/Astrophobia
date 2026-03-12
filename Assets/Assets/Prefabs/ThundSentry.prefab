@@ -337,6 +337,7 @@ MonoBehaviour:
   InitialCD: 2
   PrjPrefab: {fileID: 5493028679297179347, guid: 24ca867a182534e4eb7cbcb7fe51f09a, type: 3}
   AttackPos: {fileID: 5132425939033771365}
+  Ammo: 15
   RotateScript: {fileID: 0}
   animator: {fileID: 0}
   isActive: 0

@@ -50,12 +50,11 @@ public class EnemyCrystalShooter : MonoBehaviour
 
     void Update()
     {
+        if (player == null) return;
         float distance = Vector2.Distance(transform.position, player.position);
-
         switch (currentState)
         {
             case State.Pursue:
-
                 if (distance <= detectionRange)
                 {
                     currentState = State.Aim;
@@ -63,15 +62,10 @@ public class EnemyCrystalShooter : MonoBehaviour
 
                     snapshotTarget = player.position;
                 }
-
                 break;
-
             case State.Aim:
-
                 SmoothStop();
-
                 stateTimer -= Time.deltaTime;
-
                 if (stateTimer <= 0)
                 {
                     FireLaser();
@@ -79,18 +73,13 @@ public class EnemyCrystalShooter : MonoBehaviour
                     currentState = State.Cooldown;
                     stateTimer = cooldownTime;
                 }
-
                 break;
-
             case State.Cooldown:
-
                 stateTimer -= Time.deltaTime;
-
                 if (stateTimer <= 0)
                 {
                     currentState = State.Pursue;
                 }
-
                 break;
         }
     }
@@ -107,41 +96,35 @@ public class EnemyCrystalShooter : MonoBehaviour
     void FireLaser()
     {
         Vector2 firePos = firePoint.position;
-
         // Base direction from snapshot
         Vector2 baseDirection = (snapshotTarget - firePos).normalized;
-
         Vector2 finalDirection = baseDirection;
-
         // Occasionally use predictive aiming
         if (playerRb != null && Random.value < predictionChance)
         {
             Vector2 playerVelocity = playerRb.linearVelocity;
-
             Vector2 predictedOffset =
                 playerVelocity * predictionStrength;
-
             Vector2 predictedTarget =
                 snapshotTarget + predictedOffset;
-
             finalDirection =
                 (predictedTarget - firePos).normalized;
         }
-
         // Add randomized spread
         float randomAngle =
             Random.Range(-randomSpreadAngle, randomSpreadAngle);
-
         finalDirection =
             Quaternion.Euler(0, 0, randomAngle) * finalDirection;
-
         GameObject laser = Instantiate(
             laserPrefab,
             firePos,
             Quaternion.identity
         );
-
         LaserBeam beam = laser.GetComponent<LaserBeam>();
         beam.Initialize(finalDirection);
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player") collision.gameObject.GetComponent<Ply_Health>().TakingDamage(1);
     }
 }

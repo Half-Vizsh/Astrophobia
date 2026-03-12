@@ -131,6 +131,7 @@ MonoBehaviour:
   Spreadingtime: 5
   PrepInterval: 0.267
   ExitTime: 0.575
+  damageAmount: 1
 --- !u!60 &6308692960750239107
 PolygonCollider2D:
   m_ObjectHideFlags: 0

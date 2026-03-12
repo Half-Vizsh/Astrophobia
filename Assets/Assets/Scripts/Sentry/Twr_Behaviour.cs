@@ -6,6 +6,7 @@ public abstract class Twr_Behaviour : MonoBehaviour
     [Header("Attack")]
     private float currentCD; public float shotCD; public float InitialCD; 
     public GameObject PrjPrefab; public Transform AttackPos;
+    public int Ammo;
     [Header("Animation")]
     public Twr_Rotation RotateScript; public Animator animator;
     public bool isActive; public float StartTime;
@@ -24,9 +25,10 @@ public abstract class Twr_Behaviour : MonoBehaviour
     {
         if (!isActive) return;
         currentCD -= Time.deltaTime;
-        if (currentCD<=0)
+        if (currentCD<=0&&Ammo>0)
         {
            StartCoroutine(Attack());
+           Ammo--;
            currentCD = shotCD;
         } 
     }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -24,10 +25,10 @@ public class Ply_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame) {
-            currentHP --;
-            UpdateLife();
-        }
+        // if (Mouse.current.leftButton.wasPressedThisFrame) {
+        //     currentHP --;
+        //     UpdateLife();
+        // }
         if (isInvisble)
         {
             DmgCD -= Time.deltaTime;
@@ -39,13 +40,12 @@ public class Ply_Health : MonoBehaviour
     }
     public void TakingDamage(int amount)
     {
-        if (isInvisble)
-        {
-            return;
-        }
+        if (isInvisble)return;
         DmgCD = invisibleDuration;
         isInvisble = true;
         currentHP = Math.Clamp(currentHP-amount, 0, maxHP);
+        StartCoroutine(WhenTakeDamage());
+        UpdateLife();
         if (currentHP <= 0)
         {
             Destroy (gameObject); //Temporary, Maybe it's better to move the win/lose condition to a game manager (like in the workshop example)
@@ -55,4 +55,11 @@ public class Ply_Health : MonoBehaviour
     {
         if (currentHP>-1) LifeUI.sprite = LifeSprite[currentHP];
     }
+    public IEnumerator WhenTakeDamage()
+    {
+        isInvisble = true;
+        
+        yield return new WaitForSeconds (invisibleDuration);
+        isInvisble = false;
+    } 
 }

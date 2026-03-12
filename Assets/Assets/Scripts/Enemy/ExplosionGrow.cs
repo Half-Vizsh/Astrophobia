@@ -5,6 +5,7 @@ public class ExplosionGrow : MonoBehaviour
     public float growTime = 0.2f;
     public float finalSize = 1.5f;
     public float lingerTime = 1.5f;
+    public int damageAmount;
 
     Vector3 startScale;
     Vector3 targetScale;
@@ -34,5 +35,9 @@ public class ExplosionGrow : MonoBehaviour
                 Destroy(gameObject, lingerTime);
             }
         }
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player") collision.GetComponent<Ply_Health>().TakingDamage(damageAmount);
     }
 }

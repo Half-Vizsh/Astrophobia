@@ -19,6 +19,12 @@ public class Twr_Ice_Main : Twr_Behaviour
         yield return new WaitForSeconds(bulletInterval);
         Instantiate (PrjPrefab, BulletPoint3.position, BulletPoint3.rotation);
         animator.SetBool("isAttacking", false); 
+        Ammo--;
+        if (Ammo<=0) {
+            animator.SetBool("isActive", false);
+            RotateScript.enabled = false;
+            isActive = false;
+           }
         //If you want to change the interval, change the animation finished frame (60xInterval)
     }
 }

@@ -137,6 +137,10 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   speed: 15
   lifeTime: 5
+  damageAmount: 1
+  slowedSpeed: 3
+  slowedAcc: 2
+  slowDur: 3
 --- !u!70 &1339820382505743483
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

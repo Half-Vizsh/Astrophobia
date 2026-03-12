@@ -306,11 +306,12 @@ MonoBehaviour:
   InitialCD: 4
   PrjPrefab: {fileID: 2833374187145878919, guid: 5452c30868b7be447b61ea9dff8f2b7d, type: 3}
   AttackPos: {fileID: 6278635941814520936}
+  Ammo: 20
   RotateScript: {fileID: 673385712019861319}
   animator: {fileID: 0}
   isActive: 0
   StartTime: 1.1
-  FlameDuration: 5
+  FlameDuration: 2
 --- !u!1 &7095070528547058864
 GameObject:
   m_ObjectHideFlags: 0

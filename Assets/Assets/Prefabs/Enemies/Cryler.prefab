@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6135464465334467158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3930826114179663572}
+  m_Layer: 6
+  m_Name: FirePoint
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3930826114179663572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6135464465334467158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: -0.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1173349430496424171}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8350322886173844726
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,15 +41,16 @@ GameObject:
   m_Component:
   - component: {fileID: 1173349430496424171}
   - component: {fileID: 4888037192203469877}
-  - component: {fileID: 9127505948590538586}
   - component: {fileID: 1902710321320028577}
+  - component: {fileID: 561209749380591757}
   - component: {fileID: 7629945975849212729}
   - component: {fileID: -7779594661318589424}
-  - component: {fileID: -6522819790985500070}
-  - component: {fileID: 3652683890872998092}
-  - component: {fileID: 6256483848533402942}
+  - component: {fileID: -2746921197963726619}
+  - component: {fileID: 970701379799525250}
+  - component: {fileID: 488981780407122464}
+  - component: {fileID: 3216026288755424150}
   m_Layer: 6
-  m_Name: Enemy_3
+  m_Name: Cryler
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,7 +68,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3930826114179663572}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4888037192203469877
@@ -88,18 +121,45 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: d6c583e3c8f5f1f45b7cf1b801a07767, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1cf5272ed9c98a44e8e387e434167b1b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.26, y: 0.26}
+  m_Size: {x: 0.24, y: 0.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!58 &9127505948590538586
-CircleCollider2D:
+--- !u!50 &1902710321320028577
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350322886173844726}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &561209749380591757
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,35 +192,9 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.54
---- !u!50 &1902710321320028577
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8350322886173844726}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Offset: {x: 0.01493758, y: -0.41692108}
+  m_Size: {x: 0.8104205, y: 1.3794984}
+  m_Direction: 0
 --- !u!114 &7629945975849212729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,9 +207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13000182bfa1e4941bd232c2512273a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
-  maxSpeed: 2
-  acceleration: 4
-  turnSpeed: 240
+  maxSpeed: 2.5
+  acceleration: 5
+  turnSpeed: 300
   separationRadius: 0.5
   separationStrength: 1.5
 --- !u!114 &-7779594661318589424
@@ -198,7 +232,7 @@ MonoBehaviour:
   orbitStrength: 0.6
   orbitDistance: 1.2
   arrivalDistance: 0.8
---- !u!114 &-6522819790985500070
+--- !u!114 &-2746921197963726619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,12 +241,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 8350322886173844726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e70b35113bd8c4ca43a172a6f4b96e, type: 3}
+  m_Script: {fileID: 11500000, guid: 653d3805ec4ef2f4bb6613100a07de26, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyLifetime
-  minLifetime: 8
-  maxLifetime: 12
---- !u!114 &3652683890872998092
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCrystalShooter
+  detectionRange: 6
+  aimTime: 0.6
+  cooldownTime: 4
+  stopDeceleration: 10
+  laserPrefab: {fileID: 5345483161110464109, guid: 1f52566c81852b1459ff595ac8e5754e, type: 3}
+  firePoint: {fileID: 3930826114179663572}
+  predictionStrength: 0.6
+  randomSpreadAngle: 3
+  predictionChance: 0.7
+--- !u!114 &970701379799525250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,9 +265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac52c0a65c2d3384c8cfab0d18ccf786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyReward
-  minPoints: 6
-  maxPoints: 8
---- !u!114 &6256483848533402942
+  minPoints: 2
+  maxPoints: 6
+--- !u!114 &488981780407122464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,6 +276,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 8350322886173844726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303c938a71b320849a2a5bd533d790a5, type: 3}
+  m_Script: {fileID: 11500000, guid: af0ae03b0af59f5439b46e900028d158, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RogueSquareTimer
+  m_EditorClassIdentifier: Assembly-CSharp::Emy_Health
+  MaxHP: 5
+  currentHP: 0
+  isInvisible: 0
+  InvDur: 1.5
+--- !u!114 &3216026288755424150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350322886173844726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aaf127aaa3331f47a8929603754a654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Emy_BeingTarget
+  isTargetted: 0

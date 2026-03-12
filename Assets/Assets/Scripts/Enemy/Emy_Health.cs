@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Emy_Health : MonoBehaviour
 {
-    public float MaxHP;
-    float currentHP;
+    public int MaxHP; [SerializeField]int currentHP;
     public bool isInvisible;
     public float InvDur;
     float InvTime;
@@ -20,12 +19,11 @@ public class Emy_Health : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
         InvTime -= Time.deltaTime;
         if (InvTime <= 0) isInvisible = false;
         else isInvisible = true;
     }
-    public void TakingDamage(float amount)
+    public void TakingDamage(int amount)
     {
         if (isInvisible) return;
         currentHP -= amount;

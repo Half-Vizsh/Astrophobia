@@ -95,7 +95,7 @@ public class Ply_Movement : MonoBehaviour
     {
         // Apply impulse knockback
         rb2D.AddForce(force, ForceMode2D.Impulse);
-
+        Debug.Log("The Knockback Routine triggerd");
         // Reduce control
         controlMultiplier = 0.2f;
 
