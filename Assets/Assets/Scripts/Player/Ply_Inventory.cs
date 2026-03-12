@@ -35,6 +35,11 @@ public class Ply_Inventory : MonoBehaviour
             else hotbarElements[i].sprite = notSelected [i];
         }
     }
+    public void AddSupply(String key, int amount)
+    {
+        if (PlayerInventory.ContainsKey(key)) PlayerInventory[key]+=amount;
+        Debug.Log ("Add "+key+" "+amount+" to your inventory");
+    }
     //Input for reading number
     public void OnEnable()
     {

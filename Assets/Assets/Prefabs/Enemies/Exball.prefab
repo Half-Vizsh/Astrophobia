@@ -202,6 +202,11 @@ MonoBehaviour:
   currentHP: 0
   isInvisible: 0
   InvDur: 0
+  Rewardpool:
+  - {fileID: 3418705277786873402, guid: 0198619cb0c44e9488db0a28a02f595c, type: 3}
+  - {fileID: 5502266771871261353, guid: a18c39a2a91505e47b249e4751951c0a, type: 3}
+  - {fileID: 7775239791971367578, guid: ab4928debfa568e438ffd2a25706f58b, type: 3}
+  dropRate: 0.05
 --- !u!212 &5666482803786667352
 SpriteRenderer:
   serializedVersion: 2
