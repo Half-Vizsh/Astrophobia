@@ -9,7 +9,7 @@ public class Ply_Movement : MonoBehaviour
     public float speed;
 
     Rigidbody2D rb2D;
-    Vector2 move;
+    public Vector2 move;
 
     [Header("Dodge")]
     public InputAction DodgeButton;
@@ -17,10 +17,8 @@ public class Ply_Movement : MonoBehaviour
     [SerializeField] float dodgeDur;
     [SerializeField] float dodgeCD;
     [SerializeField] float DodgeSpeed;
-
-    Vector2 facing = new Vector2(0, 1);
-
-    bool isDodging = false;
+    public Vector2 facing = new Vector2 (0,1);
+    public bool isDodging = false;
     bool canDodge = true;
 
     float controlMultiplier = 1f;

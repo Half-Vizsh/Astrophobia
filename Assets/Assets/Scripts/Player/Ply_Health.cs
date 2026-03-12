@@ -1,29 +1,33 @@
 using System;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Ply_Health : MonoBehaviour
 {
-    [SerializeField] float maxHP;
-    private float currentHP;
-    public float Health {get {return currentHP;}} 
-    public bool isInvisble{get; private set;}
-    public void setInvisble(bool State)
-    {
-        //"Good habit" they said
-        isInvisble = State;
-    }
+    [SerializeField] int maxHP;
+    private int currentHP;
+    public Image LifeUI;
+    public Sprite [] LifeSprite = new Sprite [6];
+    public int Health {get {return currentHP;}} 
+    public bool isInvisble;
     [SerializeField] float invisibleDuration;
     private float DmgCD;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHP = maxHP;
+        UpdateLife();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Mouse.current.leftButton.wasPressedThisFrame) {
+            currentHP --;
+            UpdateLife();
+        }
         if (isInvisble)
         {
             DmgCD -= Time.deltaTime;
@@ -33,7 +37,7 @@ public class Ply_Health : MonoBehaviour
             }
         }
     }
-    public void TakingDamage(float amount)
+    public void TakingDamage(int amount)
     {
         if (isInvisble)
         {
@@ -46,5 +50,9 @@ public class Ply_Health : MonoBehaviour
         {
             Destroy (gameObject); //Temporary, Maybe it's better to move the win/lose condition to a game manager (like in the workshop example)
         }
+    }
+    public void UpdateLife()
+    {
+        if (currentHP>-1) LifeUI.sprite = LifeSprite[currentHP];
     }
 }

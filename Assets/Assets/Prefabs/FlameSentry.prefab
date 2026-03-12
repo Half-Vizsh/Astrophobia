@@ -134,8 +134,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4026080892169289842}
   - component: {fileID: 2299427519448498419}
+  - component: {fileID: 2292569723604425381}
   m_Layer: 0
-  m_Name: flame_top_0
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,6 +216,28 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!95 &2292569723604425381
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5191006499493654308}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37ccd58a801c3d347ad680517eef80ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6458440002543276816
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,9 +247,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3502785096116979921}
-  - component: {fileID: 6588759743531086575}
   - component: {fileID: 673385712019861319}
-  - component: {fileID: 4917477754910568868}
+  - component: {fileID: 3599347215415023524}
   m_Layer: 0
   m_Name: BarrelJoint
   m_TagString: Untagged
@@ -251,23 +273,6 @@ Transform:
   - {fileID: 6278635941814520936}
   m_Father: {fileID: 9024911548171980378}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6588759743531086575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6458440002543276816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a43c583769fac468380dc68b9d8af1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Test_FireTurretBehaviour
-  enemyDetected: 0
-  SentryDamage: 1
-  cooldown: 2
-  ThrowerDur: 3
-  Colli: {fileID: 4917477754910568868}
 --- !u!114 &673385712019861319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,64 +285,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5756ed570d47154387b1396273f613d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Twr_Rotation
-  IsRotating: 0
   rotateSpeed: 180
-  attackRange: 3
+  attackRange: 5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
---- !u!60 &4917477754910568868
-PolygonCollider2D:
+--- !u!114 &3599347215415023524
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6458440002543276816}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.08593738, y: 2.843445}
-      - {x: -0.72374934, y: 2.828765}
-      - {x: -0.25285363, y: 0.5295193}
-      - {x: 0.21151483, y: 0.53301454}
-      - {x: 0.59698945, y: 2.831807}
-  m_UseDelaunayMesh: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31955c676b88a2c4687255550052c52a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Twr_Fire_Main
+  shotCD: 10
+  InitialCD: 4
+  PrjPrefab: {fileID: 2833374187145878919, guid: 5452c30868b7be447b61ea9dff8f2b7d, type: 3}
+  AttackPos: {fileID: 6278635941814520936}
+  RotateScript: {fileID: 673385712019861319}
+  animator: {fileID: 0}
+  isActive: 0
+  StartTime: 1.1
+  FlameDuration: 5
 --- !u!1 &7095070528547058864
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6278635941814520936}
   m_Layer: 0
-  m_Name: Flame
+  m_Name: FlamePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,7 +336,7 @@ Transform:
   m_GameObject: {fileID: 7095070528547058864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.791, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

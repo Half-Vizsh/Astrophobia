@@ -128,6 +128,9 @@ GameObject:
   - component: {fileID: 8747701178280880019}
   - component: {fileID: 6296128037106733430}
   - component: {fileID: 5368012777920749142}
+  - component: {fileID: 3569090171904285687}
+  - component: {fileID: 4895514259561268043}
+  - component: {fileID: 655583317828359959}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -185,7 +188,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.046245188, y: -0.092490315}
+  m_Offset: {x: 0.07996604, y: 0.065864086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -195,7 +198,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5028645, y: 0.81501937}
+  m_Size: {x: 0.61935455, y: 0.8906983}
   m_EdgeRadius: 0
 --- !u!50 &7263448206911128641
 Rigidbody2D:
@@ -286,6 +289,7 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
   speed: 4
+  move: {x: 0, y: 0}
   DodgeButton:
     m_Name: Dodge Button
     m_Type: 0
@@ -307,6 +311,8 @@ MonoBehaviour:
   dodgeDur: 0.2
   dodgeCD: 0.5
   DodgeSpeed: 15
+  facing: {x: 0, y: 1}
+  isDodging: 0
 --- !u!114 &6296128037106733430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +325,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68255cf317cef945a8ddf88565c6c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player_Health
-  maxHP: 100
+  maxHP: 5
+  LifeUI: {fileID: 0}
+  LifeSprite:
+  - {fileID: -3677723888259533663, guid: 82951e0337acf114f9a2c412a1662a5f, type: 3}
+  - {fileID: -526986066041695012, guid: 0ecb959220ff8ff4b9d1170e535658d7, type: 3}
+  - {fileID: 5871174058966458396, guid: 1cbc672322083c040b9efbac1e76face, type: 3}
+  - {fileID: -2867335724425866429, guid: 95c4603e1fc9e0a4eb841f64ecbd6e22, type: 3}
+  - {fileID: -1203253068956136669, guid: 52ea6b439e68079439cd9c09bf5f14a0, type: 3}
+  - {fileID: 5066892534885029086, guid: ebf1a64d4aa3d714f83e0e5a9bc26178, type: 3}
+  isInvisble: 0
   invisibleDuration: 0
 --- !u!114 &5368012777920749142
 MonoBehaviour:
@@ -337,3 +352,79 @@ MonoBehaviour:
   enemy:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &3569090171904285687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582239015959793914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77472015746648446ae022ed755c7183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ply_Inventory
+  ImgSelected:
+  - {fileID: 7896075201155933894, guid: 28e8a4f4cb4b9bf4cadaf1d13ea4bde6, type: 3}
+  - {fileID: -656400350088532572, guid: c3ca4b7fccfabd14aae4204c35dbf958, type: 3}
+  - {fileID: -5206538750781958301, guid: 3f333eb4d8e618745bf259222f473bfd, type: 3}
+  - {fileID: -7709786026312678399, guid: b4010f287b2da0646b1cb2091134331f, type: 3}
+  notSelected:
+  - {fileID: -919463634876089772, guid: bd9cc473421b9a84b807fb03a046123e, type: 3}
+  - {fileID: -2094666781010613686, guid: 7a79a8bb7642e134081fc230ae68345b, type: 3}
+  - {fileID: -1080095702746832503, guid: 9c1dfb81949b6f243abcef80d0346f4b, type: 3}
+  - {fileID: 926017814940993061, guid: 75067a3b6d0363e49ab2e79aecd67aea, type: 3}
+  hotbarElements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  BuildManager: {fileID: 0}
+  currentChoice: 0
+  initialSupply: 3
+--- !u!114 &4895514259561268043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582239015959793914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7b66fbca1872a49915130cdb0f3c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ply_Animator
+  animator: {fileID: 0}
+  rb2D: {fileID: 0}
+  MoveScript: {fileID: 0}
+  BuildScript: {fileID: 0}
+  HealthScript: {fileID: 0}
+  sr: {fileID: 0}
+  DeathTime: 1.05
+--- !u!114 &655583317828359959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4582239015959793914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27feefcff51364f40b7e2fe001aeb2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GH_BuildManager
+  TowerPrefabs:
+  - {fileID: 1420032317640904997, guid: a1226b31733285d43ab5bcaf1372bef6, type: 3}
+  - {fileID: 2991129206295338482, guid: 155a2299a6b7c364fb8ead7c214d11e5, type: 3}
+  - {fileID: 353070085559256076, guid: 2dc9d7686dbc1454d8e197cde11e4b98, type: 3}
+  inBuildingMode: 0
+  inDestructionMode: 0
+  CurrentTWR: 0
+  BuildCD: 3
+  BuildRad: 1
+  BuildTime: 1.05
+  InvAccess: {fileID: 3569090171904285687}
+  isBuildingSmt: 0
+  TMP: {fileID: 0}
+  ObstacleTile: {fileID: 0}
+  Cam: {fileID: 0}
