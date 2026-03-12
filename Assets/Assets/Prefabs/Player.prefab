@@ -334,6 +334,7 @@ MonoBehaviour:
   - {fileID: -2867335724425866429, guid: 95c4603e1fc9e0a4eb841f64ecbd6e22, type: 3}
   - {fileID: -1203253068956136669, guid: 52ea6b439e68079439cd9c09bf5f14a0, type: 3}
   - {fileID: 5066892534885029086, guid: ebf1a64d4aa3d714f83e0e5a9bc26178, type: 3}
+  isInvisble: 0
   invisibleDuration: 0
 --- !u!114 &5368012777920749142
 MonoBehaviour:
@@ -363,6 +364,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77472015746648446ae022ed755c7183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ply_Inventory
+  ImgSelected:
+  - {fileID: 7896075201155933894, guid: 28e8a4f4cb4b9bf4cadaf1d13ea4bde6, type: 3}
+  - {fileID: -656400350088532572, guid: c3ca4b7fccfabd14aae4204c35dbf958, type: 3}
+  - {fileID: -5206538750781958301, guid: 3f333eb4d8e618745bf259222f473bfd, type: 3}
+  - {fileID: -7709786026312678399, guid: b4010f287b2da0646b1cb2091134331f, type: 3}
+  notSelected:
+  - {fileID: -919463634876089772, guid: bd9cc473421b9a84b807fb03a046123e, type: 3}
+  - {fileID: -2094666781010613686, guid: 7a79a8bb7642e134081fc230ae68345b, type: 3}
+  - {fileID: -1080095702746832503, guid: 9c1dfb81949b6f243abcef80d0346f4b, type: 3}
+  - {fileID: 926017814940993061, guid: 75067a3b6d0363e49ab2e79aecd67aea, type: 3}
+  hotbarElements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   BuildManager: {fileID: 0}
   currentChoice: 0
   initialSupply: 3
@@ -382,7 +398,9 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   MoveScript: {fileID: 0}
   BuildScript: {fileID: 0}
+  HealthScript: {fileID: 0}
   sr: {fileID: 0}
+  DeathTime: 1.05
 --- !u!114 &655583317828359959
 MonoBehaviour:
   m_ObjectHideFlags: 0

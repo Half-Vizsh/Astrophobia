@@ -1,10 +1,16 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
 public class Ply_Inventory : MonoBehaviour
 {
+    [Header("UI Handler")]
+    public Sprite [] ImgSelected = new Sprite [4];
+    public Sprite [] notSelected = new Sprite [4];
+    public Image [] hotbarElements = new Image [4];
+    [Header("Input Handler")]
     public Dictionary<String, int> PlayerInventory = new (); 
     // public int cound_Ice; public int count_Fire; public int count_Thund; //public int count_Destr;
     public Ply_Buildmanager BuildManager;
@@ -22,6 +28,12 @@ public class Ply_Inventory : MonoBehaviour
     public void SelectSlot(int numPressed)
     {
         currentChoice = numPressed;
+        for (int i = 0; i<hotbarElements.Length; i++)
+        {
+            //Changing UI image
+            if (i==currentChoice) hotbarElements[i].sprite = ImgSelected [i];
+            else hotbarElements[i].sprite = notSelected [i];
+        }
     }
     //Input for reading number
     public void OnEnable()
