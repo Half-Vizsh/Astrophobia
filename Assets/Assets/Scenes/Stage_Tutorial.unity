@@ -19254,7 +19254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -656400350088532572, guid: c3ca4b7fccfabd14aae4204c35dbf958, type: 3}
+  m_Sprite: {fileID: -2094666781010613686, guid: 7a79a8bb7642e134081fc230ae68345b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34639,7 +34639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7709786026312678399, guid: b4010f287b2da0646b1cb2091134331f, type: 3}
+  m_Sprite: {fileID: 926017814940993061, guid: 75067a3b6d0363e49ab2e79aecd67aea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34882,6 +34882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4895514259561268043, guid: aac029cff47d9174eae7470918430a38, type: 3}
+      propertyPath: DeathTime
+      value: 1.05
+      objectReference: {fileID: 0}
     - target: {fileID: 6296128037106733430, guid: aac029cff47d9174eae7470918430a38, type: 3}
       propertyPath: LifeUI
       value: 
@@ -34948,7 +34952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7896075201155933894, guid: 28e8a4f4cb4b9bf4cadaf1d13ea4bde6, type: 3}
+  m_Sprite: {fileID: -919463634876089772, guid: bd9cc473421b9a84b807fb03a046123e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -35139,7 +35143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5206538750781958301, guid: 3f333eb4d8e618745bf259222f473bfd, type: 3}
+  m_Sprite: {fileID: -1080095702746832503, guid: 9c1dfb81949b6f243abcef80d0346f4b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -11,12 +11,7 @@ public class Ply_Health : MonoBehaviour
     public Image LifeUI;
     public Sprite [] LifeSprite = new Sprite [6];
     public int Health {get {return currentHP;}} 
-    public bool isInvisble{get; private set;}
-    public void setInvisble(bool State)
-    {
-        //"Good habit" they said
-        isInvisble = State;
-    }
+    public bool isInvisble;
     [SerializeField] float invisibleDuration;
     private float DmgCD;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,6 +24,10 @@ public class Ply_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Mouse.current.leftButton.wasPressedThisFrame) {
+            currentHP --;
+            UpdateLife();
+        }
         if (isInvisble)
         {
             DmgCD -= Time.deltaTime;
