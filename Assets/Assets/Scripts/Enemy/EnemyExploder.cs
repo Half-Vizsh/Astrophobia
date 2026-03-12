@@ -7,15 +7,17 @@ public class EnemyExploder : MonoBehaviour
     public float explosionRadius = 2.0f;
     public float explosionForce = 6f;
 
-    public LayerMask affectedLayers;
+    public GameObject explosionPrefab;
 
     Transform player;
+    Ply_Movement playerMovement;
 
     bool exploded = false;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerMovement = player.GetComponent<Ply_Movement>();
     }
 
     void Update()
@@ -26,7 +28,6 @@ public class EnemyExploder : MonoBehaviour
 
         if (distance <= triggerDistance)
         {
-            Debug.Log("EXPLODING");
             Explode();
         }
     }
@@ -35,27 +36,23 @@ public class EnemyExploder : MonoBehaviour
     {
         exploded = true;
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(
-            transform.position,
-            explosionRadius,
-            affectedLayers
-        );
+        // Spawn explosion visual
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
-        foreach (Collider2D hit in hits)
+        float playerDistance = Vector2.Distance(transform.position, player.position);
+
+        if (playerDistance <= explosionRadius)
         {
-            Vector2 dir = (hit.transform.position - transform.position).normalized;
+            // Snapshot player position
+            Vector2 snapshotPlayerPos = player.position;
 
-            EnemyMovement enemy = hit.GetComponent<EnemyMovement>();
-            if (enemy != null)
-            {
-                enemy.ApplyKnockback(transform.position);
-                continue;
-            }
+            // Compute knockback direction
+            Vector2 knockbackDir =
+                (snapshotPlayerPos - (Vector2)transform.position).normalized;
 
-            Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();
-            if (rb != null)
+            if (playerMovement != null)
             {
-                rb.AddForce(dir * explosionForce, ForceMode2D.Impulse);
+                playerMovement.ApplyExplosionKnockback(knockbackDir * explosionForce);
             }
         }
 

@@ -290,6 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 38569415}
   - component: {fileID: 38569416}
+  - component: {fileID: 38569417}
   m_Layer: 0
   m_Name: EnemySpawnManager
   m_TagString: Untagged
@@ -324,6 +325,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614f3ab38a31b1c4382e34e804863ece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnManager
+  spawnAreas: []
+--- !u!114 &38569417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38569413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54fd97f5a197b0a4d82ec16c49aa7a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyWaveManager
+  wavePoints: 0
+  maxPoints: 10000
+  baseSpecialChance: 0.1
+  specialSpawnChance: 0.25
+  eventCooldown: 15
 --- !u!1001 &65929832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -685,6 +704,103 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de41d683127ecc747a892d3ab8e310d3, type: 3}
+--- !u!1 &170411456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170411459}
+  - component: {fileID: 170411458}
+  - component: {fileID: 170411457}
+  m_Layer: 0
+  m_Name: EnemySpawnArea-N
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &170411457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f148d61c22422084580fef399aa0a567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnArea
+  enemyPrefabs:
+  - {fileID: 8350322886173844726, guid: 14c0cb55112207c4fab2056b0a0a086e, type: 3}
+  - {fileID: 8350322886173844726, guid: 274444ecaa21e8d41b08f1c05538832b, type: 3}
+  - {fileID: 8350322886173844726, guid: 3c9209b2dfd37bf48bf1df9cdf91e953, type: 3}
+  minDistanceFromPlayer: 2
+  maxSpawnAttempts: 10
+--- !u!61 &170411458
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411456}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 4, y: 4}
+  m_EdgeRadius: 0
+--- !u!4 &170411459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411456}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 7.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &221043064 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9219485231140611064, guid: de41d683127ecc747a892d3ab8e310d3, type: 3}
@@ -1035,7 +1151,7 @@ GameObject:
   - component: {fileID: 652262673}
   - component: {fileID: 652262675}
   m_Layer: 0
-  m_Name: EnemySpawnArea-R
+  m_Name: EnemySpawnArea-E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1120,6 +1236,103 @@ MonoBehaviour:
   - {fileID: 8350322886173844726, guid: 3c9209b2dfd37bf48bf1df9cdf91e953, type: 3}
   minDistanceFromPlayer: 2
   maxSpawnAttempts: 10
+--- !u!1 &734857468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 734857471}
+  - component: {fileID: 734857470}
+  - component: {fileID: 734857469}
+  m_Layer: 0
+  m_Name: EnemySpawnArea-S
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &734857469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734857468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f148d61c22422084580fef399aa0a567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnArea
+  enemyPrefabs:
+  - {fileID: 8350322886173844726, guid: 14c0cb55112207c4fab2056b0a0a086e, type: 3}
+  - {fileID: 8350322886173844726, guid: 274444ecaa21e8d41b08f1c05538832b, type: 3}
+  - {fileID: 8350322886173844726, guid: 3c9209b2dfd37bf48bf1df9cdf91e953, type: 3}
+  minDistanceFromPlayer: 2
+  maxSpawnAttempts: 10
+--- !u!61 &734857470
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734857468}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 4, y: 4}
+  m_EdgeRadius: 0
+--- !u!4 &734857471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734857468}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -7.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &779702772 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9219485231140611064, guid: de41d683127ecc747a892d3ab8e310d3, type: 3}
@@ -2173,7 +2386,7 @@ GameObject:
   - component: {fileID: 1197300858}
   - component: {fileID: 1197300860}
   m_Layer: 0
-  m_Name: EnemySpawnArea-L
+  m_Name: EnemySpawnArea-W
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3089,7 +3302,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1267830177, guid: 8f7a60065e3984c489b9c4d41bc3dc4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3496,3 +3709,5 @@ SceneRoots:
   - {fileID: 38569415}
   - {fileID: 652262674}
   - {fileID: 1197300859}
+  - {fileID: 170411459}
+  - {fileID: 734857471}

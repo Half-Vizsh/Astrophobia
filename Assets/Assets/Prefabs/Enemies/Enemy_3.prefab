@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7629945975849212729}
   - component: {fileID: -7779594661318589424}
   - component: {fileID: -6522819790985500070}
+  - component: {fileID: 3652683890872998092}
+  - component: {fileID: 6256483848533402942}
   m_Layer: 6
   m_Name: Enemy_3
   m_TagString: Enemy
@@ -173,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
   maxSpeed: 2
   acceleration: 4
-  turnSpeed: 270
+  turnSpeed: 240
   separationRadius: 0.5
   separationStrength: 1.5
 --- !u!114 &-7779594661318589424
@@ -189,12 +191,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   playerTouchDistance: 0.8
-  playerBounceForce: 2.5
-  playerBounceDuration: 0.08
+  playerBounceForce: 4
+  playerBounceDuration: 0.02
+  minimumPlayerSpeed: 0.15
   sidewaysFactor: 0.55
-  knockbackForce: 3.2
-  knockbackControlDelay: 0.35
-  knockbackDrag: 4.5
   orbitStrength: 0.6
   orbitDistance: 1.2
   arrivalDistance: 0.8
@@ -212,3 +212,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyLifetime
   minLifetime: 8
   maxLifetime: 12
+--- !u!114 &3652683890872998092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350322886173844726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac52c0a65c2d3384c8cfab0d18ccf786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyReward
+  minPoints: 6
+  maxPoints: 8
+--- !u!114 &6256483848533402942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350322886173844726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303c938a71b320849a2a5bd533d790a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RogueSquareTimer

@@ -6,17 +6,23 @@ public class EnemyCrystalShooter : MonoBehaviour
     public float detectionRange = 6f;
 
     [Header("Timing")]
-    public float aimTime = 0.4f;
-    public float cooldownTime = 1.5f;
+    public float aimTime = 0.6f;
+    public float cooldownTime = 4f;
 
     [Header("Movement")]
-    public float stopDeceleration = 8f;
+    public float stopDeceleration = 10f;
 
     [Header("Laser")]
     public GameObject laserPrefab;
     public Transform firePoint;
 
+    [Header("Aim Behaviour")]
+    public float predictionStrength = 0.6f;   // how strong the lead is
+    public float randomSpreadAngle = 3f;      // random aim offset
+    public float predictionChance = 0.7f;     // chance to use prediction
+
     Transform player;
+    Rigidbody2D playerRb;
     Rigidbody2D rb;
     EnemyMovement movement;
 
@@ -37,6 +43,7 @@ public class EnemyCrystalShooter : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
+        playerRb = player.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
         movement = GetComponent<EnemyMovement>();
     }
@@ -54,7 +61,6 @@ public class EnemyCrystalShooter : MonoBehaviour
                     currentState = State.Aim;
                     stateTimer = aimTime;
 
-                    // snapshot player position
                     snapshotTarget = player.position;
                 }
 
@@ -100,15 +106,42 @@ public class EnemyCrystalShooter : MonoBehaviour
 
     void FireLaser()
     {
-        Vector2 direction = (snapshotTarget - (Vector2)firePoint.position).normalized;
+        Vector2 firePos = firePoint.position;
+
+        // Base direction from snapshot
+        Vector2 baseDirection = (snapshotTarget - firePos).normalized;
+
+        Vector2 finalDirection = baseDirection;
+
+        // Occasionally use predictive aiming
+        if (playerRb != null && Random.value < predictionChance)
+        {
+            Vector2 playerVelocity = playerRb.linearVelocity;
+
+            Vector2 predictedOffset =
+                playerVelocity * predictionStrength;
+
+            Vector2 predictedTarget =
+                snapshotTarget + predictedOffset;
+
+            finalDirection =
+                (predictedTarget - firePos).normalized;
+        }
+
+        // Add randomized spread
+        float randomAngle =
+            Random.Range(-randomSpreadAngle, randomSpreadAngle);
+
+        finalDirection =
+            Quaternion.Euler(0, 0, randomAngle) * finalDirection;
 
         GameObject laser = Instantiate(
             laserPrefab,
-            firePoint.position,
+            firePos,
             Quaternion.identity
         );
 
         LaserBeam beam = laser.GetComponent<LaserBeam>();
-        beam.Initialize(direction);
+        beam.Initialize(finalDirection);
     }
 }

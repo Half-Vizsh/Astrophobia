@@ -5,26 +5,22 @@ public class EnemyMovement : MonoBehaviour
     EnemyStats stats;
     Transform player;
     Rigidbody2D rb;
+    Rigidbody2D playerRb;
 
     Vector2 velocity;
 
     [Header("Touch Bounce")]
     public float playerTouchDistance = 0.8f;
-    public float playerBounceForce = 2.5f;
+    public float playerBounceForce = 4.5f;
     public float playerBounceDuration = 0.08f;
 
+    // Player must actually be moving to cause knockback
+    public float minimumPlayerSpeed = 0.15f;
+
     // sideways strength
-    public float sidewaysFactor = 0.55f;
+    public float sidewaysFactor = 0.45f;
 
     float bounceTimer = 0f;
-
-    // Knockback parameters (used for explosions)
-    public float knockbackForce = 3.2f;
-    public float knockbackControlDelay = 0.35f;
-    public float knockbackDrag = 4.5f;
-
-    float knockbackTimer = 0f;
-    float originalDrag;
 
     [Header("Swarm Behaviour")]
     public float orbitStrength = 0.6f;
@@ -40,7 +36,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        originalDrag = rb.linearDamping;
+        playerRb = player.GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
@@ -50,28 +46,6 @@ public class EnemyMovement : MonoBehaviour
         if (bounceTimer > 0f)
         {
             bounceTimer -= Time.fixedDeltaTime;
-            return;
-        }
-
-        if (knockbackTimer > 0f)
-        {
-            knockbackTimer -= Time.fixedDeltaTime;
-
-            float controlFactor = 1f - (knockbackTimer / knockbackControlDelay);
-            controlFactor = Mathf.Clamp01(controlFactor);
-
-            Vector2 desired = SeekPlayer() + Separation() + OrbitPlayer();
-            desired = desired.normalized * stats.maxSpeed;
-
-            Vector2 blendedVelocity =
-                Vector2.Lerp(rb.linearVelocity, desired,
-                controlFactor * stats.acceleration * Time.fixedDeltaTime);
-
-            rb.linearVelocity = blendedVelocity;
-
-            if (knockbackTimer <= 0f)
-                rb.linearDamping = originalDrag;
-
             return;
         }
 
@@ -94,26 +68,32 @@ public class EnemyMovement : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= playerTouchDistance)
-        {
-            Vector2 away = ((Vector2)transform.position - (Vector2)player.position).normalized;
+        if (distance > playerTouchDistance)
+            return;
 
-            // sideways direction based on player velocity
-            Vector2 playerVelocity = Vector2.zero;
+        if (playerRb == null)
+            return;
 
-            Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
-            if (playerRb != null)
-                playerVelocity = playerRb.linearVelocity;
+        Vector2 playerVelocity = playerRb.linearVelocity;
 
-            Vector2 sideways = new Vector2(-playerVelocity.y, playerVelocity.x).normalized;
+        float playerSpeed = playerVelocity.magnitude;
 
-            Vector2 bounceDirection = (away + sideways * sidewaysFactor).normalized;
+        // If player isn't moving, do NOT push enemy
+        if (playerSpeed < minimumPlayerSpeed)
+            return;
 
-            // instant sharp bounce
-            rb.linearVelocity = bounceDirection * playerBounceForce;
+        // Direction player is moving
+        Vector2 moveDir = playerVelocity.normalized;
 
-            bounceTimer = playerBounceDuration;
-        }
+        // sideways deflection
+        Vector2 sideways = new Vector2(-moveDir.y, moveDir.x);
+
+        Vector2 bounceDirection =
+            (moveDir + sideways * sidewaysFactor).normalized;
+
+        rb.linearVelocity = bounceDirection * playerBounceForce;
+
+        bounceTimer = playerBounceDuration;
     }
 
     Vector2 SeekPlayer()
@@ -168,16 +148,5 @@ public class EnemyMovement : MonoBehaviour
         }
 
         return force * stats.separationStrength;
-    }
-
-    public void ApplyKnockback(Vector2 sourcePosition)
-    {
-        Vector2 dir = ((Vector2)transform.position - sourcePosition).normalized;
-
-        rb.AddForce(dir * knockbackForce, ForceMode2D.Impulse);
-
-        rb.linearDamping = knockbackDrag;
-
-        knockbackTimer = knockbackControlDelay;
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class LaserBeam : MonoBehaviour
 {
     [Header("Beam Settings")]
-    public float duration = 0.35f;
+    public float duration = 0.25f;
 
     Vector2 direction;
 

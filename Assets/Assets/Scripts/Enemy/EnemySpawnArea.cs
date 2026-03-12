@@ -16,6 +16,7 @@ public class EnemySpawnArea : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+    // RANDOM spawn (used for debug)
     public void SpawnEnemy()
     {
         if (enemyPrefabs == null || enemyPrefabs.Length == 0)
@@ -24,13 +25,23 @@ public class EnemySpawnArea : MonoBehaviour
             return;
         }
 
-        Vector2 spawnPosition = FindValidSpawnPosition();
-
         int index = Random.Range(0, enemyPrefabs.Length);
 
-        GameObject enemyPrefab = enemyPrefabs[index];
+        SpawnEnemy(index);
+    }
 
-        Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+    // SPAWN specific enemy type
+    public void SpawnEnemy(int enemyIndex)
+    {
+        if (enemyPrefabs == null || enemyPrefabs.Length == 0)
+            return;
+
+        if (enemyIndex < 0 || enemyIndex >= enemyPrefabs.Length)
+            return;
+
+        Vector2 spawnPosition = FindValidSpawnPosition();
+
+        Instantiate(enemyPrefabs[enemyIndex], spawnPosition, Quaternion.identity);
     }
 
     Vector2 FindValidSpawnPosition()
