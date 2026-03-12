@@ -32,7 +32,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Exball_WalkUp
+  m_Name: Exball_WalkDown
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -97,7 +97,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Vel.y
-    m_EventTreshold: -1
+    m_EventTreshold: -0.01
   - m_ConditionMode: 2
     m_ConditionEvent: isExploding
     m_EventTreshold: 0
@@ -176,7 +176,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Exball_Walkback
+  m_Name: Exball_WalkUp
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -207,7 +207,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Vel.y
-    m_EventTreshold: 0
+    m_EventTreshold: 0.01
   - m_ConditionMode: 2
     m_ConditionEvent: isExploding
     m_EventTreshold: 0

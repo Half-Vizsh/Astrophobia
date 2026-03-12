@@ -99,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -156,7 +156,7 @@ TextureImporter:
         width: 23
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -170,37 +170,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster crystal base animation_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 39
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61a0a661fa85c0e50800000000000000
-      internalID: 6776889048304323094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: monster crystal base animation_2
       rect:
         serializedVersion: 2
-        x: 62
+        x: 60
         y: 17
-        width: 20
+        width: 23
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,37 +192,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster crystal base animation_3
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 39
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 68e5dc093f1f01b90800000000000000
-      internalID: -7273047369794625914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: monster crystal base animation_4
       rect:
         serializedVersion: 2
-        x: 109
+        x: 107
         y: 17
-        width: 20
+        width: 25
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,37 +214,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster crystal base animation_5
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 37
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a2117196b7015cd80800000000000000
-      internalID: -8231154621719572182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: monster crystal base animation_6
       rect:
         serializedVersion: 2
-        x: 158
+        x: 154
         y: 18
-        width: 19
+        width: 28
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -302,37 +236,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster crystal base animation_7
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 32
-        width: 19
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c3610017464d3670800000000000000
-      internalID: 8520043341079995330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: monster crystal base animation_8
       rect:
         serializedVersion: 2
-        x: 254
+        x: 247
         y: 17
-        width: 23
+        width: 30
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -346,37 +258,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster crystal base animation_9
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 32
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a45ef4d847a500550800000000000000
-      internalID: 6124994949857404234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: monster crystal base animation_10
       rect:
         serializedVersion: 2
-        x: 206
+        x: 200
         y: 17
-        width: 19
-        height: 20
+        width: 30
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -389,143 +279,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: monster crystal base animation_11
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 27
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a890849204a588a0800000000000000
-      internalID: -6303451772446795616
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: monster crystal base animation_12
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 27
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a74d9868e7365cb0800000000000000
-      internalID: -4875648075254904922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: monster crystal base animation_13
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 21
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4bcde1668c224a110800000000000000
-      internalID: 1271179238927424692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: monster crystal base animation_14
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 21
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c0e6ec5099a14810800000000000000
-      internalID: 1747864567895482560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: monster crystal base animation_15
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 22
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c603bc01b11c9e900800000000000000
-      internalID: 714314337904963692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: monster crystal base animation_16
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 25
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1b62fd9c54136570800000000000000
-      internalID: 8458626913151380254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 85bede59a2764bd4c9f1924b41d0a33b
     internalID: 0
     vertices: []
     indices: 

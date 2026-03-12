@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7815726087102216026}
   - component: {fileID: 7932722124693489577}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Railguin Ray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 2618846114407380728}
   - component: {fileID: 9099847249015644457}
   - component: {fileID: 6126906233522577095}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Railgun Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}

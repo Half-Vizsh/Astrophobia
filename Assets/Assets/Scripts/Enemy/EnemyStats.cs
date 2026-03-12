@@ -14,10 +14,16 @@ public class EnemyStats : MonoBehaviour
     public float separationStrength = 1.8f;
     
     public IEnumerator BeingSlowed(float duration, float slowedSpeed, float slowedAcc)
-    {
-        float RealSpeed = maxSpeed; float RealAcc = acceleration;
-        Mathf.Clamp(maxSpeed, 1, slowedSpeed); Mathf.Clamp(acceleration, 1, slowedAcc);
-        yield return new WaitForSeconds(duration);
-        maxSpeed = RealSpeed; acceleration = RealAcc;
-    }
+{
+    float realSpeed = maxSpeed;
+    float realAcc = acceleration;
+    
+    maxSpeed = slowedSpeed;
+    acceleration = slowedAcc;
+
+    yield return new WaitForSeconds(duration);
+
+    maxSpeed = realSpeed;
+    acceleration = realAcc;
+}
 }

@@ -25,6 +25,7 @@ public class EnemyCrystalShooter : MonoBehaviour
     Rigidbody2D playerRb;
     Rigidbody2D rb;
     EnemyMovement movement;
+    Animator animator;
 
     float stateTimer = 0f;
 
@@ -42,10 +43,10 @@ public class EnemyCrystalShooter : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
         playerRb = player.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
         movement = GetComponent<EnemyMovement>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -68,13 +69,15 @@ public class EnemyCrystalShooter : MonoBehaviour
                 stateTimer -= Time.deltaTime;
                 if (stateTimer <= 0)
                 {
-                    FireLaser();
+                    animator.SetBool("isAttacking", true);
+                    // FireLaser();
 
-                    currentState = State.Cooldown;
-                    stateTimer = cooldownTime;
+                    // currentState = State.Cooldown;
+                    // stateTimer = cooldownTime;
                 }
                 break;
             case State.Cooldown:
+                animator.SetBool("isAttacking", false);
                 stateTimer -= Time.deltaTime;
                 if (stateTimer <= 0)
                 {
@@ -83,7 +86,6 @@ public class EnemyCrystalShooter : MonoBehaviour
                 break;
         }
     }
-
     void SmoothStop()
     {
         rb.linearVelocity = Vector2.Lerp(
@@ -122,6 +124,8 @@ public class EnemyCrystalShooter : MonoBehaviour
         );
         LaserBeam beam = laser.GetComponent<LaserBeam>();
         beam.Initialize(finalDirection);
+        currentState = State.Cooldown;
+        stateTimer = cooldownTime;
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
