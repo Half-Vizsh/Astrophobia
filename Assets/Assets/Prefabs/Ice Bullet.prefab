@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7929099112932714751}
   - component: {fileID: 1339820382505743483}
   - component: {fileID: 6791812039926245609}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ice Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,8 +135,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindBullet
   rb2D: {fileID: 0}
-  speed: 15
+  speed: 30
   lifeTime: 5
+  damageAmount: 1
+  slowedSpeed: 1
+  slowedAcc: 1
+  slowDur: 100
 --- !u!70 &1339820382505743483
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

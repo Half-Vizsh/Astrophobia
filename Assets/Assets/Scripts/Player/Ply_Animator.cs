@@ -1,6 +1,5 @@
 using System.Collections;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -12,6 +11,7 @@ public class Ply_Animator : MonoBehaviour
     public Ply_Buildmanager BuildScript;
     public Ply_Health HealthScript;
     public SpriteRenderer sr;
+    public GameObject DEATHUI;
     bool isDead;
     [SerializeField] float DeathTime;
     void Start()
@@ -23,6 +23,8 @@ public class Ply_Animator : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         sr = GetComponentInChildren<SpriteRenderer>();
         isDead = false;
+        DEATHUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     // (I think I should've used state machine :/)
@@ -36,6 +38,7 @@ public class Ply_Animator : MonoBehaviour
         bool Dodging = MoveScript.isDodging;
         bool Moving = MoveScript.move.sqrMagnitude >= 0.01f;
         bool Dying = HealthScript.Health <= 0; 
+        bool GettingDamage = HealthScript.spriteWhite;
 
         if (Dying)
         {
@@ -45,8 +48,11 @@ public class Ply_Animator : MonoBehaviour
             isDead = true;
             animator.SetBool("isDying", true);
             Destroy(gameObject, DeathTime);
+            DEATHUI.SetActive(true);
+            Time.timeScale = 0f;
             return;
         }
+        animator.SetBool("isDamage", GettingDamage);
         if (Building)
         {
             rb2D.linearVelocity = Vector2.zero;

@@ -100,6 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9024911548171980378}
+  - component: {fileID: 4584195405063895470}
   m_Layer: 0
   m_Name: FlameSentry
   m_TagString: Obstacle
@@ -124,6 +125,42 @@ Transform:
   - {fileID: 3502785096116979921}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &4584195405063895470
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2991129206295338482}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
 --- !u!1 &5191006499493654308
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,11 +343,12 @@ MonoBehaviour:
   InitialCD: 4
   PrjPrefab: {fileID: 2833374187145878919, guid: 5452c30868b7be447b61ea9dff8f2b7d, type: 3}
   AttackPos: {fileID: 6278635941814520936}
+  Ammo: 20
   RotateScript: {fileID: 673385712019861319}
   animator: {fileID: 0}
   isActive: 0
   StartTime: 1.1
-  FlameDuration: 5
+  FlameDuration: 2
 --- !u!1 &7095070528547058864
 GameObject:
   m_ObjectHideFlags: 0

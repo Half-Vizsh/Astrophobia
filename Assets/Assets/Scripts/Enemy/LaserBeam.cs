@@ -4,6 +4,7 @@ public class LaserBeam : MonoBehaviour
 {
     [Header("Beam Settings")]
     public float duration = 0.25f;
+    public int LaserDMG;
 
     Vector2 direction;
 
@@ -24,8 +25,7 @@ public class LaserBeam : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // placeholder for damage
-            Debug.Log("Player hit by laser");
+            other.GetComponent<Ply_Health>().TakingDamage(LaserDMG, Vector3.zero);
         }
     }
 }

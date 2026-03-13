@@ -138,13 +138,13 @@ TextureImporter:
       name: player_dash_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 16
         y: 13
-        width: 31
+        width: 17
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 14, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -160,9 +160,9 @@ TextureImporter:
       name: player_dash_1
       rect:
         serializedVersion: 2
-        x: 63
+        x: 64
         y: 13
-        width: 18
+        width: 17
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -182,9 +182,9 @@ TextureImporter:
       name: player_dash_2
       rect:
         serializedVersion: 2
-        x: 111
+        x: 112
         y: 13
-        width: 18
+        width: 17
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -204,9 +204,9 @@ TextureImporter:
       name: player_dash_3
       rect:
         serializedVersion: 2
-        x: 159
+        x: 160
         y: 13
-        width: 18
+        width: 17
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

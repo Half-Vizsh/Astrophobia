@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: d074a8b9913ea4b4992988672b3704dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6994871537121031332
+    second: monster bulet explosion_0
+  - first:
+      213: -1862235366620236140
+    second: monster bulet explosion_1
+  - first:
+      213: -4764145358812881174
+    second: monster bulet explosion_2
+  - first:
+      213: 9142519021803543934
+    second: monster bulet explosion_3
+  - first:
+      213: -4043214957627232418
+    second: monster bulet explosion_4
+  - first:
+      213: -7673790192822657949
+    second: monster bulet explosion_5
+  - first:
+      213: 2640785555719407420
+    second: monster bulet explosion_6
+  - first:
+      213: 1522195866347696566
+    second: monster bulet explosion_7
+  - first:
+      213: 6741098997640904741
+    second: monster bulet explosion_8
+  - first:
+      213: 8101390079354424733
+    second: monster bulet explosion_9
+  - first:
+      213: -3480153989799966623
+    second: monster bulet explosion_10
+  - first:
+      213: -8766851057363456092
+    second: monster bulet explosion_11
+  - first:
+      213: -7013253023374548987
+    second: monster bulet explosion_12
+  - first:
+      213: 5975078092265921145
+    second: monster bulet explosion_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monster bulet explosion_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 9
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b096cb5693dee90800000000000000
+      internalID: -6994871537121031332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 9
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4967e64fcc20826e0800000000000000
+      internalID: -1862235366620236140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 9
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeed1a5a90b52edb0800000000000000
+      internalID: -4764145358812881174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 9
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d1ad67c90c0ee70800000000000000
+      internalID: 9142519021803543934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 9
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f251cfa6d93e7c0800000000000000
+      internalID: -4043214957627232418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 9
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cdde32a78318590800000000000000
+      internalID: -7673790192822657949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 6
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3743a0b874f5a420800000000000000
+      internalID: 2640785555719407420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 5
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1f834531def1510800000000000000
+      internalID: 1522195866347696566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_8
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 4
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520c02e82d13d8d50800000000000000
+      internalID: 6741098997640904741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 4
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d4bcaaa5bed6070800000000000000
+      internalID: 8101390079354424733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_10
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 4
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168805a826204bfc0800000000000000
+      internalID: -3480153989799966623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_11
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 4
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afe71f7963e55680800000000000000
+      internalID: -8766851057363456092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_12
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 4
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50063d5788bebae90800000000000000
+      internalID: -7013253023374548987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster bulet explosion_13
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 5
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a9aba1eddbbe250800000000000000
+      internalID: 5975078092265921145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      monster bulet explosion_0: -6994871537121031332
+      monster bulet explosion_1: -1862235366620236140
+      monster bulet explosion_10: -3480153989799966623
+      monster bulet explosion_11: -8766851057363456092
+      monster bulet explosion_12: -7013253023374548987
+      monster bulet explosion_13: 5975078092265921145
+      monster bulet explosion_2: -4764145358812881174
+      monster bulet explosion_3: 9142519021803543934
+      monster bulet explosion_4: -4043214957627232418
+      monster bulet explosion_5: -7673790192822657949
+      monster bulet explosion_6: 2640785555719407420
+      monster bulet explosion_7: 1522195866347696566
+      monster bulet explosion_8: 6741098997640904741
+      monster bulet explosion_9: 8101390079354424733
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

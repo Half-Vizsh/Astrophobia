@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2682864505218964482}
+  - component: {fileID: 4526949848378038612}
   m_Layer: 0
   m_Name: ThundSentry
   m_TagString: Obstacle
@@ -33,6 +34,42 @@ Transform:
   - {fileID: 2598754769504674402}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &4526949848378038612
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420032317640904997}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
 --- !u!1 &2461924291199248576
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +374,7 @@ MonoBehaviour:
   InitialCD: 2
   PrjPrefab: {fileID: 5493028679297179347, guid: 24ca867a182534e4eb7cbcb7fe51f09a, type: 3}
   AttackPos: {fileID: 5132425939033771365}
+  Ammo: 15
   RotateScript: {fileID: 0}
   animator: {fileID: 0}
   isActive: 0

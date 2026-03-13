@@ -1,0 +1,425 @@
+fileFormatVersion: 2
+guid: 74e1f6247b1d2a040a8452a5d368f433
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6290594039535476695
+    second: monster crystal attack_0
+  - first:
+      213: -5926113972176875894
+    second: monster crystal attack_1
+  - first:
+      213: -7456560220321628873
+    second: monster crystal attack_2
+  - first:
+      213: 520940390390632518
+    second: monster crystal attack_3
+  - first:
+      213: -7840646549942266673
+    second: monster crystal attack_4
+  - first:
+      213: 4879413978169395348
+    second: monster crystal attack_5
+  - first:
+      213: -3758335641066504228
+    second: monster crystal attack_6
+  - first:
+      213: -1817556868445977846
+    second: monster crystal attack_7
+  - first:
+      213: -2806134090772470653
+    second: monster crystal attack_8
+  - first:
+      213: -6093717360250543745
+    second: monster crystal attack_9
+  - first:
+      213: -4637903806476695105
+    second: monster crystal attack_10
+  - first:
+      213: -1797310975315927237
+    second: monster crystal attack_11
+  - first:
+      213: -6496893483670768237
+    second: monster crystal attack_12
+  - first:
+      213: 1746548356211561704
+    second: monster crystal attack_13
+  - first:
+      213: -499947672482754890
+    second: monster crystal attack_14
+  - first:
+      213: 2540687366588024150
+    second: monster crystal attack_15
+  - first:
+      213: -3144587961647800911
+    second: monster crystal attack_16
+  - first:
+      213: -1617779400413029083
+    second: monster crystal attack_17
+  - first:
+      213: 6972033713361933197
+    second: monster crystal attack_18
+  - first:
+      213: 7573076610618402
+    second: monster crystal attack_19
+  - first:
+      213: -8793603043990289736
+    second: monster crystal attack_20
+  - first:
+      213: 637463369328430247
+    second: monster crystal attack_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: monster crystal attack_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 17
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e0bed7db632cda0800000000000000
+      internalID: -5926113972176875894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_6
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 16
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf7a8f95a5b7dbc0800000000000000
+      internalID: -3758335641066504228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_7
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 16
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03c43178adb6c6e0800000000000000
+      internalID: -1817556868445977846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_8
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 16
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384a46779eb9e09d0800000000000000
+      internalID: -2806134090772470653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_9
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 18
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71a2a4c854ce6ba0800000000000000
+      internalID: -6093717360250543745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_10
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 18
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb946888f0bd2afb0800000000000000
+      internalID: -4637903806476695105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_12
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 17
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395f0427cc566d5a0800000000000000
+      internalID: -6496893483670768237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_14
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 17
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bec16f9d34df09f0800000000000000
+      internalID: -499947672482754890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_17
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 16
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ddf69e43e7c89e0800000000000000
+      internalID: -1617779400413029083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster crystal attack_18
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 16
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d835cfe09b3a1c060800000000000000
+      internalID: 6972033713361933197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a4605296c2cd30b478c7f6e340b66b16
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      monster crystal attack_0: -6290594039535476695
+      monster crystal attack_1: -5926113972176875894
+      monster crystal attack_10: -4637903806476695105
+      monster crystal attack_11: -1797310975315927237
+      monster crystal attack_12: -6496893483670768237
+      monster crystal attack_13: 1746548356211561704
+      monster crystal attack_14: -499947672482754890
+      monster crystal attack_15: 2540687366588024150
+      monster crystal attack_16: -3144587961647800911
+      monster crystal attack_17: -1617779400413029083
+      monster crystal attack_18: 6972033713361933197
+      monster crystal attack_19: 7573076610618402
+      monster crystal attack_2: -7456560220321628873
+      monster crystal attack_20: -8793603043990289736
+      monster crystal attack_21: 637463369328430247
+      monster crystal attack_3: 520940390390632518
+      monster crystal attack_4: -7840646549942266673
+      monster crystal attack_5: 4879413978169395348
+      monster crystal attack_6: -3758335641066504228
+      monster crystal attack_7: -1817556868445977846
+      monster crystal attack_8: -2806134090772470653
+      monster crystal attack_9: -6093717360250543745
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

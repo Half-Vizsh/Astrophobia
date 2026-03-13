@@ -30,22 +30,16 @@ public class EnemyWaveManager : MonoBehaviour
     void Start()
     {
         spawnManager = GetComponent<EnemySpawnManager>();
-
         specialSpawnChance = baseSpecialChance;
+        StartWaveSystem();
     }
 
     void Update()
     {
-        if (!waveRunning &&
-            Keyboard.current != null &&
-            Keyboard.current.lKey.wasPressedThisFrame)
-        {
-            StartWaveSystem();
-        }
-
-        if (!waveRunning)
+        if (!waveRunning){
+            Debug.Log("WARNING WAVE NOT RUNNING");
             return;
-
+        }
         spawnTimer += Time.deltaTime;
         eventCooldownTimer += Time.deltaTime;
 
