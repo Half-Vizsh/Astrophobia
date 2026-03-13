@@ -104,7 +104,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0d0ff6140c4fd3a4387bcb4df3a9afaf, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
@@ -315,7 +315,7 @@ MonoBehaviour:
   isDodging: 0
   isKnocked: 0
   knockbackDuration: 0.25
-  knockbackForce: 0.5
+  knockbackForce: 10
 --- !u!114 &6296128037106733430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,7 +338,8 @@ MonoBehaviour:
   - {fileID: -1203253068956136669, guid: 52ea6b439e68079439cd9c09bf5f14a0, type: 3}
   - {fileID: 5066892534885029086, guid: ebf1a64d4aa3d714f83e0e5a9bc26178, type: 3}
   isInvisble: 0
-  invisibleDuration: 1
+  spriteWhite: 0
+  invisibleDuration: 0.5
   moveScript: {fileID: 0}
 --- !u!114 &5368012777920749142
 MonoBehaviour:

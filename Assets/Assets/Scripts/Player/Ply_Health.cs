@@ -45,10 +45,6 @@ public class Ply_Health : MonoBehaviour
         StartCoroutine(WhenTakeDamage());
         if (enemyDir!=Vector2.zero)StartCoroutine(moveScript.Knockback(enemyDir));
         UpdateLife();
-        if (currentHP <= 0)
-        {
-            Destroy (gameObject); //Temporary, Maybe it's better to move the win/lose condition to a game manager (like in the workshop example)
-        }
     }
     public void UpdateLife()
     {

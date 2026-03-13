@@ -310,7 +310,7 @@ MonoBehaviour:
   MaxHP: 5
   currentHP: 0
   isInvisible: 0
-  InvDur: 1.5
+  InvDur: 0.63
   Rewardpool:
   - {fileID: 3418705277786873402, guid: 0198619cb0c44e9488db0a28a02f595c, type: 3}
   - {fileID: 5502266771871261353, guid: a18c39a2a91505e47b249e4751951c0a, type: 3}

@@ -302,7 +302,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0030272007, y: 0.14707541}
+  m_Offset: {x: 0.012973607, y: -0.02493298}
   m_SpriteTilingProperty:
     border: {x: 0.6, y: 0.4, z: 0.75, w: 0.35}
     pivot: {x: 0.4674056, y: 0.5}
@@ -312,7 +312,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0454717, y: 1.4017787}
+  m_Size: {x: 1.5574967, y: 1.7457955}
   m_EdgeRadius: 0
 --- !u!61 &4501157198440990364
 BoxCollider2D:
@@ -454,7 +454,7 @@ MonoBehaviour:
   MaxHP: 10
   currentHP: 0
   isInvisible: 0
-  InvDur: 5
+  InvDur: 0.63
   Rewardpool:
   - {fileID: 3418705277786873402, guid: 0198619cb0c44e9488db0a28a02f595c, type: 3}
   - {fileID: 5502266771871261353, guid: a18c39a2a91505e47b249e4751951c0a, type: 3}

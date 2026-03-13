@@ -13,6 +13,11 @@ public class Emy_Twr_Disabbler : MonoBehaviour
     {
         animator.SetFloat("Vel.y",rb2d.linearVelocity.y);
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Ply_Health PlyHealthScript = collision.gameObject.GetComponent<Ply_Health>();
+        PlyHealthScript.TakingDamage(1, transform.position);
+    }
     void OnTriggerEnter2D(Collider2D collision)
     {
         Twr_Behaviour TwrScript = collision.GetComponentInChildren<Twr_Behaviour>();
