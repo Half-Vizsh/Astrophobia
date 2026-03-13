@@ -132,6 +132,7 @@ MonoBehaviour:
   PrepInterval: 0.267
   ExitTime: 0.575
   damageAmount: 1
+  burnDur: 10
 --- !u!60 &6308692960750239107
 PolygonCollider2D:
   m_ObjectHideFlags: 0

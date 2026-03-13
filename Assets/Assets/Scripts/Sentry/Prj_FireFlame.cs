@@ -6,7 +6,7 @@ public class Prj_FireFlame : MonoBehaviour
     public float Spreadingtime; 
     [SerializeField] private float PrepInterval;
     [SerializeField] private float ExitTime;
-    public int damageAmount;
+    public int damageAmount; public float burnDur;
     Animator FlameAnimator;
     PolygonCollider2D PC2D;
     Twr_Fire_Main TwrScript;
@@ -34,6 +34,6 @@ public class Prj_FireFlame : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy")) other.GetComponent<Emy_Health>().TakingDamage(damageAmount);
+        if (other.CompareTag("Enemy")) other.GetComponent<Emy_Health>().ApplyBurn(burnDur, damageAmount);
     }
 }
