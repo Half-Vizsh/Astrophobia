@@ -88,6 +88,8 @@ public class Ply_Buildmanager : MonoBehaviour
             isBuildingSmt = true;
             GameObject tower = Instantiate(TowerPrefabs[CurrentTWR], GridWorldPos, quaternion.identity);
             InvAccess.PlayerInventory[towerKey]--;
+            InvAccess.UpdateInventory(towerKey);
+            if (InvAccess.PlayerInventory[towerKey]<=0) StartCoroutine(InvAccess.EmergencyRefill(towerKey));
             Debug.Log (towerKey + "Has been spawned, you have "+InvAccess.PlayerInventory[towerKey]+" left");
             occupiedLand.Add(CellPos, tower);
             currentCD+=BuildCD;

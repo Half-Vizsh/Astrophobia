@@ -379,9 +379,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  TowerStoredAmount:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   BuildManager: {fileID: 0}
   currentChoice: 0
   initialSupply: 3
+  RefillDur: 10
 --- !u!114 &4895514259561268043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,7 +425,7 @@ MonoBehaviour:
   inBuildingMode: 0
   inDestructionMode: 0
   CurrentTWR: 0
-  BuildCD: 3
+  BuildCD: 1
   BuildRad: 1
   BuildTime: 1.05
   InvAccess: {fileID: 3569090171904285687}
