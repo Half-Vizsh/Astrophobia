@@ -32,6 +32,7 @@ public class EnemyExploder : MonoBehaviour
             return;
         }
         animator.SetFloat("Vel.y",RB2D.linearVelocity.y);
+        if (player == null) return;
         float distance = Vector2.Distance(transform.position, player.position);
         if (distance <= triggerDistance)
         {

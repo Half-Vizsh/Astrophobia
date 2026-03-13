@@ -36,6 +36,7 @@ public class Ply_Animator : MonoBehaviour
         bool Dodging = MoveScript.isDodging;
         bool Moving = MoveScript.move.sqrMagnitude >= 0.01f;
         bool Dying = HealthScript.Health <= 0; 
+        bool GettingDamage = HealthScript.spriteWhite;
 
         if (Dying)
         {
@@ -47,6 +48,7 @@ public class Ply_Animator : MonoBehaviour
             Destroy(gameObject, DeathTime);
             return;
         }
+        animator.SetBool("isDamage", GettingDamage);
         if (Building)
         {
             rb2D.linearVelocity = Vector2.zero;

@@ -18,8 +18,8 @@ public class EnemyStats : MonoBehaviour
     float realSpeed = maxSpeed;
     float realAcc = acceleration;
     
-    maxSpeed = slowedSpeed;
-    acceleration = slowedAcc;
+    if (maxSpeed>slowedSpeed)maxSpeed = slowedSpeed;
+    if (acceleration>slowedAcc)acceleration = slowedAcc;
 
     yield return new WaitForSeconds(duration);
 

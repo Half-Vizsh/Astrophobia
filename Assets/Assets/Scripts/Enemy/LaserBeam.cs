@@ -25,7 +25,7 @@ public class LaserBeam : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Ply_Health>().TakingDamage(LaserDMG);
+            other.GetComponent<Ply_Health>().TakingDamage(LaserDMG, Vector3.zero);
         }
     }
 }

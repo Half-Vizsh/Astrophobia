@@ -34,7 +34,7 @@ public abstract class Twr_Behaviour : MonoBehaviour
             RotateScript.enabled = true;
             }
         currentCD -= Time.deltaTime;
-        if (currentCD<=0&&Ammo>0)
+        if (currentCD<=0&&Ammo>0&&RotateScript.TargetExist)
         {
            StartCoroutine(Attack());
            Ammo--;
@@ -51,7 +51,7 @@ public abstract class Twr_Behaviour : MonoBehaviour
     }
     public IEnumerator StartUp()   
     {
-        yield return new WaitForSecondsRealtime (StartTime);
+        yield return new WaitForSeconds (StartTime);
         animator.SetBool("isActive", true);
         RotateScript.enabled =true;
         isActive = true;

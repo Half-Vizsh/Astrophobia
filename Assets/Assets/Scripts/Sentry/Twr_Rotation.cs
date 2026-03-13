@@ -7,13 +7,15 @@ public class Twr_Rotation : MonoBehaviour
     public float attackRange = 5f;
     public LayerMask enemyLayer;
     Transform NearbyEnemy;
+    public bool TargetExist;
     void Update()
     {
         NearbyEnemy = GetClosestEnemy();
         if (NearbyEnemy != null)
         {
+            TargetExist = true;
             RotateTowards(NearbyEnemy);
-        }
+        } else TargetExist = false;
     }
     Transform GetClosestEnemy()
     {

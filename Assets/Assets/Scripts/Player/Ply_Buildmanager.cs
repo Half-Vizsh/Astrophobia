@@ -29,6 +29,7 @@ public class Ply_Buildmanager : MonoBehaviour
     // public GameObject player;
     Dictionary<Vector3Int, GameObject> occupiedLand = new();
     Vector3 MouseScreenPos; Vector3 MouseWorldPos; Vector3 GridWorldPos; Vector3Int CellPos;
+    GameObject lastHoveredTower;
     void Start()
     {
         //WARNING SPAGHETTI CODE AHEAD
@@ -55,23 +56,48 @@ public class Ply_Buildmanager : MonoBehaviour
                 }
             }
         }
-        if (inDestructionMode)
+    if (inDestructionMode)
+    {
+    if (occupiedLand.ContainsKey(CellPos))
+    {
+        GameObject towerThere = occupiedLand[CellPos];
+        if (towerThere == null) return;
+
+        // If hover changed, reset previous tower color
+        if (lastHoveredTower != null && lastHoveredTower != towerThere)
         {
-            if (occupiedLand.ContainsKey(CellPos))
-            {
-                GameObject TowerThere = occupiedLand[CellPos];
-                if (TowerThere == null) return;
-                SpriteRenderer[] allSr = TowerThere.GetComponentsInChildren<SpriteRenderer>();
-                foreach (SpriteRenderer sr in allSr)
-                {
-                    sr.color = Color.red;
-                }
-                if (Mouse.current.rightButton.wasPressedThisFrame&&Time.time>=currentCD)
-                {
-                    Destroy (TowerThere);
-                }    
-            }    
+            SpriteRenderer[] oldSr = lastHoveredTower.GetComponentsInChildren<SpriteRenderer>();
+            foreach (SpriteRenderer sr in oldSr)
+                sr.color = Color.white;
         }
+
+        lastHoveredTower = towerThere;
+
+        // Paint current tower red
+        SpriteRenderer[] allSr = towerThere.GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer sr in allSr)
+        {
+            sr.color = Color.red;
+        }
+
+        if (Mouse.current.rightButton.wasPressedThisFrame && Time.time >= currentCD)
+        {
+            Destroy(towerThere);
+            lastHoveredTower = null;
+        }
+    }
+    else{
+        // Mouse not hovering tower → reset previous one
+        if (lastHoveredTower != null)
+            {
+            SpriteRenderer[] oldSr = lastHoveredTower.GetComponentsInChildren<SpriteRenderer>();
+            foreach (SpriteRenderer sr in oldSr)
+                sr.color = Color.white;
+
+            lastHoveredTower = null;
+            }
+        }
+    }
     }
     IEnumerator BuildSomething()
     {

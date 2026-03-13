@@ -129,6 +129,6 @@ public class EnemyCrystalShooter : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player") collision.gameObject.GetComponent<Ply_Health>().TakingDamage(1);
+        if (collision.gameObject.tag == "Player") collision.gameObject.GetComponent<Ply_Health>().TakingDamage(1, transform.position);
     }
 }

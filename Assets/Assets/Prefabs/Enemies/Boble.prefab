@@ -370,8 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13000182bfa1e4941bd232c2512273a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
-  maxSpeed: 2
-  acceleration: 4
+  maxSpeed: 0.5
+  acceleration: 1
   turnSpeed: 240
   separationRadius: 0.5
   separationStrength: 1.5

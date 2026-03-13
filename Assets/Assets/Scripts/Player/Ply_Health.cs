@@ -12,12 +12,14 @@ public class Ply_Health : MonoBehaviour
     public Image LifeUI;
     public Sprite [] LifeSprite = new Sprite [6];
     public int Health {get {return currentHP;}} 
-    public bool isInvisble;
-    [SerializeField] float invisibleDuration;
+    public bool isInvisble; public bool spriteWhite;
+    [SerializeField] float invisibleDuration; 
     private float DmgCD;
+    public Ply_Movement moveScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        moveScript = GetComponent<Ply_Movement>();
         currentHP = maxHP;
         UpdateLife();
     }
@@ -25,10 +27,6 @@ public class Ply_Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (Mouse.current.leftButton.wasPressedThisFrame) {
-        //     currentHP --;
-        //     UpdateLife();
-        // }
         if (isInvisble)
         {
             DmgCD -= Time.deltaTime;
@@ -38,13 +36,14 @@ public class Ply_Health : MonoBehaviour
             }
         }
     }
-    public void TakingDamage(int amount)
+    public void TakingDamage(int amount, Vector2 enemyDir)
     {
-        if (isInvisble)return;
+        if (isInvisble) return;
         DmgCD = invisibleDuration;
         isInvisble = true;
         currentHP = Math.Clamp(currentHP-amount, 0, maxHP);
         StartCoroutine(WhenTakeDamage());
+        if (enemyDir!=Vector2.zero)StartCoroutine(moveScript.Knockback(enemyDir));
         UpdateLife();
         if (currentHP <= 0)
         {
@@ -57,8 +56,11 @@ public class Ply_Health : MonoBehaviour
     }
     public IEnumerator WhenTakeDamage()
     {
+        //Modify sprite?
         isInvisble = true;
-        
+        spriteWhite = true;
+        yield return new WaitForSeconds (0.1f);
+        spriteWhite = false;
         yield return new WaitForSeconds (invisibleDuration);
         isInvisble = false;
     } 

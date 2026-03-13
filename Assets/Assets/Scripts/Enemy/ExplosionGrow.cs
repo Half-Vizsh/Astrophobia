@@ -38,6 +38,6 @@ public class ExplosionGrow : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player") collision.GetComponent<Ply_Health>().TakingDamage(damageAmount);
+        if (collision.tag == "Player") collision.GetComponent<Ply_Health>().TakingDamage(damageAmount, transform.position);
     }
 }

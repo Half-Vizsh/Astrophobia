@@ -313,6 +313,9 @@ MonoBehaviour:
   DodgeSpeed: 15
   facing: {x: 0, y: 1}
   isDodging: 0
+  isKnocked: 0
+  knockbackDuration: 0.25
+  knockbackForce: 0.5
 --- !u!114 &6296128037106733430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,7 +338,8 @@ MonoBehaviour:
   - {fileID: -1203253068956136669, guid: 52ea6b439e68079439cd9c09bf5f14a0, type: 3}
   - {fileID: 5066892534885029086, guid: ebf1a64d4aa3d714f83e0e5a9bc26178, type: 3}
   isInvisble: 0
-  invisibleDuration: 0
+  invisibleDuration: 1
+  moveScript: {fileID: 0}
 --- !u!114 &5368012777920749142
 MonoBehaviour:
   m_ObjectHideFlags: 0

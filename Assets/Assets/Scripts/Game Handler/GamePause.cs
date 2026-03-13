@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
 
 public class GamePause : MonoBehaviour
@@ -8,7 +9,8 @@ public class GamePause : MonoBehaviour
     public static bool isPause;
     void Start()
     {
-           PauseMenu.SetActive(false);
+        Time.timeScale = 1f;  
+        PauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,7 +30,7 @@ public class GamePause : MonoBehaviour
     public void Pause()
     {
         PauseMenu.SetActive(true);
-        Time.timeScale = 0f;   
+        Time.timeScale = 0f;  
         isPause = true;
     }
     public void Resume()
@@ -36,5 +38,13 @@ public class GamePause : MonoBehaviour
         PauseMenu.SetActive(false);
         Time.timeScale = 1f;   
         isPause = false;
+    }
+    public void Reload()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+    }
+    public void MenuButton()
+    {
+        SceneManager.LoadSceneAsync("Game_Scene_Main_Menu");
     }
 }

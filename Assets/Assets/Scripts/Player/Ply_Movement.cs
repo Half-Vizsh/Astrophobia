@@ -20,6 +20,7 @@ public class Ply_Movement : MonoBehaviour
     public Vector2 facing = new Vector2 (0,1);
     public bool isDodging = false;
     bool canDodge = true;
+    public bool isKnocked; public float knockbackDuration; public float knockbackForce;
 
     float controlMultiplier = 1f;
 
@@ -35,7 +36,6 @@ public class Ply_Movement : MonoBehaviour
     void Update()
     {
         move = MoveButton.ReadValue<Vector2>();
-
         if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
         {
             facing.Set(move.x, move.y);
@@ -45,14 +45,13 @@ public class Ply_Movement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isKnocked) return;
         var dodgeCek = DodgeButton.ReadValue<float>();
-
         if (Mathf.Approximately(dodgeCek, 1f) && canDodge)
         {
             StartCoroutine(Dodge());
             return;
         }
-
         if (!isDodging)
         {
             rb2D.linearVelocity = move.normalized * speed * controlMultiplier;
@@ -63,54 +62,26 @@ public class Ply_Movement : MonoBehaviour
     {
         isDodging = true;
         canDodge = false;
-
         var timeElapse = 0f;
-
         while (timeElapse < dodgeDur)
         {
             var t = timeElapse / dodgeDur;
-
             float gradualSpeed = 1f - t;
-
             rb2D.linearVelocity = facing.normalized * DodgeSpeed * gradualSpeed;
-
             timeElapse += Time.deltaTime;
-
             yield return new WaitForFixedUpdate();
         }
-
         isDodging = false;
-
         yield return new WaitForSeconds(dodgeCD);
-
         canDodge = true;
     }
 
-    public void ApplyExplosionKnockback(Vector2 force)
+    public IEnumerator Knockback(Vector2 dir)
     {
-        StartCoroutine(ExplosionKnockbackRoutine(force));
-    }
-
-    IEnumerator ExplosionKnockbackRoutine(Vector2 force)
-    {
-        // Apply impulse knockback
-        rb2D.AddForce(force, ForceMode2D.Impulse);
-        Debug.Log("The Knockback Routine triggerd");
-        // Reduce control
-        controlMultiplier = 0.2f;
-
-        float recoveryTime = 0.4f;
-        float t = 0f;
-
-        while (t < recoveryTime)
-        {
-            controlMultiplier = Mathf.Lerp(0.2f, 1f, t / recoveryTime);
-
-            t += Time.deltaTime;
-
-            yield return null;
-        }
-
-        controlMultiplier = 1f;
+        isKnocked = true;
+        Vector2 knockDir = ((Vector2)transform.position - dir).normalized;
+        rb2D.linearVelocity = knockDir * knockbackForce;
+        yield return new WaitForSeconds(knockbackDuration);
+        isKnocked = false;
     }
 }
